@@ -189,6 +189,10 @@
                         <span class="file-icon">&#128054;</span>
                         Villkor Hundförsäkring Bas (.docx)
                     </a>
+                    <a href="demomaterial/sveland-skadedata-q1-2025.xlsx" download class="file-item">
+                        <span class="file-icon">&#128202;</span>
+                        Skadedata Q1 2025 (.xlsx)
+                    </a>
                 </div>
             </div>
 
@@ -414,16 +418,17 @@
                         <span class="exercise-number">1</span>
                         <span class="exercise-title">Copilot-formeln i Excel</span>
                     </div>
-                    <p class="exercise-intro">Formeln <code>=copilot()</code> är en ny funktion som kan analysera data, kategorisera text och till och med hämta extern information — direkt i en cell.</p>
+                    <p class="exercise-intro">Formeln <code>=copilot()</code> kan analysera data, kategorisera text och hämta information — direkt i en cell. Filen har 3 flikar: Skadeärenden, Försäljning per handläggare och Kundnöjdhet.</p>
                     <ol>
-                        <li>Öppna demofilen med skadedata i Excel.</li>
-                        <li><strong>Känsloanalys:</strong> I en ny kolumn, skriv: <code>=copilot("Kategorisera denna kundfeedback som positiv, neutral eller negativ och lägg till en passande emoji", A2)</code></li>
-                        <li><strong>Sammanfattning:</strong> Testa: <code>=copilot("Sammanfatta detta ärende i en mening", B2)</code></li>
-                        <li><strong>Copilot Chat i Excel:</strong> Öppna Copilot-panelen och skriv: <em>"Analysera detta kalkylblad och ge mig de viktigaste insikterna"</em></li>
-                        <li>Diskutera: Vad kan ni använda detta till i er vardag? Vilka analyser gör ni idag manuellt?</li>
+                        <li>Öppna <strong>sveland-skadedata-q1-2025.xlsx</strong> i Excel.</li>
+                        <li><strong>Känsloanalys (fliken Kundnöjdhet):</strong> Skapa en ny kolumn H. I H3, skriv: <code>=copilot("Kategorisera denna kundfeedback som positiv, neutral eller negativ och lägg till en passande emoji", E3)</code> — dra ner formeln.</li>
+                        <li><strong>Copilot Chat — Skadeärenden:</strong> Öppna Copilot-panelen och skriv: <em>"Analysera fliken Skadeärenden. Vilken skadetyp har längst genomsnittlig handläggningstid? Vilken handläggare har flest ärenden under granskning?"</em></li>
+                        <li><strong>Copilot Chat — Försäljning:</strong> Gå till fliken Försäljning och skriv: <em>"Vilka handläggare ligger över sitt mål för Q1? Skapa ett diagram som visar utvecklingen per månad."</em></li>
+                        <li><strong>Korsanalys:</strong> Testa: <em>"Finns det ett samband mellan handläggningstid och kundnöjdhet? Jämför data från fliken Skadeärenden och Kundnöjdhet."</em></li>
+                        <li>Diskutera: Vilka analyser gör ni idag manuellt som Copilot kan hjälpa med?</li>
                     </ol>
                     <div class="note-box">
-                        <strong>Demomaterial:</strong> Använd den bifogade Excel-filen med skadedata. Testa att ställa frågor som <em>"Vilken skadetyp har längst genomsnittlig handläggningstid?"</em> eller <em>"Visa trenden för inkomna ärenden per månad"</em>
+                        <strong>Demomaterial:</strong> Filen innehåller 30 skadeärenden (hund, katt, häst, marsvin), försäljningsdata för 6 handläggare, och kundnöjdhetsenkäter med fritext. Perfekt för att testa både <code>=copilot()</code>-formeln och Copilot Chat i Excel.
                     </div>
                 </div>
 
