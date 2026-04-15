@@ -64,6 +64,10 @@
         .step-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #411B38; }
         .step-description { font-size: 17px; line-height: 1.6; color: #7A4864; }
 
+        /* Code blocks */
+        .code-block { background: #FFF6F0; border-radius: 12px; padding: 20px; margin-top: 12px; font-family: 'SF Mono', 'Monaco', 'Courier New', monospace; font-size: 14px; line-height: 1.6; color: #411B38; overflow-x: auto; border: 1px solid rgba(65, 27, 56, 0.1); }
+        code { background: #FFF6F0; padding: 2px 8px; border-radius: 6px; font-family: 'SF Mono', 'Monaco', 'Courier New', monospace; font-size: 14px; color: #411B38; border: 1px solid rgba(65, 27, 56, 0.1); }
+
         /* Note boxes */
         .note-box { background: #FFF6F0; border-radius: 12px; padding: 24px; margin: 24px 0; font-size: 17px; line-height: 1.6; color: #411B38; border-left: 4px solid #C87C5C; }
         .note-box strong { font-weight: 600; color: #411B38; }
@@ -209,71 +213,105 @@
             <!-- ===== TILLFÄLLE 1 ===== -->
             <div id="t1-tab" class="tab-content active">
 
+                <!-- 1. VÄLJ LÄGE -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">1</span>
-                        <span class="exercise-title">Teams — vad missade jag?</span>
+                        <span class="exercise-title">Välj läge i M365 Copilot</span>
                     </div>
-                    <p class="exercise-intro">Testa att sammanfatta ett Teams-möte med Copilot Recap-fliken. Vad fick du ut? Hur bra stämde det?</p>
+                    <p class="exercise-intro">Copilot har olika lägen: snabba svar för enkla frågor, och "tänk djupare" för komplexa analyser. Testa skillnaden.</p>
                     <ol>
-                        <li>Gå till chatten för ett avslutat möte &rarr; klicka på <strong>Recap-fliken</strong>.</li>
-                        <li>Välj <em>"Recap the meeting"</em> eller skriv en egen fråga, t.ex. "Vilka beslut togs?"</li>
-                        <li><strong>OBS:</strong> Fungerar bara om transkribering var påslagen under mötet.</li>
-                        <li>Diskutera i lärparet: Vad var träffsäkert? Vad saknades?</li>
+                        <li>Öppna M365 Copilot Chat (i Teams eller på microsoft365.com).</li>
+                        <li><strong>Snabbt svar:</strong> Skriv <em>"Vad innebär karenstid i en djurförsäkring?"</em> — notera hur snabbt svaret kommer.</li>
+                        <li><strong>Djupare tänkande:</strong> Växla till "Think deeper"-läget och skriv: <em>"Hjälp mig analysera hur vi kan förbättra vår skadehanteringsprocess för att minska handläggningstiderna, med hänsyn till GDPR och kundnöjdhet"</em></li>
+                        <li>Diskutera i lärparet: När är snabbt tillräckligt? När behöver du djupare analys?</li>
                     </ol>
-                    <div class="note-box">
-                        <strong>Demomaterial:</strong> Använd filen "Mötesanteckningar — Teamsmöte skadeavdelningen" som underlag. Kopiera in texten i en Copilot Chat och be den sammanfatta mötet och identifiera beslutspunkter.
-                    </div>
                 </div>
 
+                <!-- 2. ANPASSADE INSTRUKTIONER -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">2</span>
-                        <span class="exercise-title">Hitta rätt i SharePoint</span>
+                        <span class="exercise-title">Anpassade instruktioner</span>
                     </div>
-                    <p class="exercise-intro">Ge Copilot en konkret fråga om något du faktiskt letar efter — ett policydokument, ett villkor, ett underlag. Jämför mot att söka manuellt.</p>
+                    <p class="exercise-intro">Du kan ställa in hur Copilot ska svara dig — din roll, din ton, dina behov. Det gör alla framtida svar mer relevanta.</p>
                     <ol>
-                        <li>Öppna Copilot Chat (i Teams eller på microsoft365.com).</li>
-                        <li>Skriv t.ex.: <em>"Hitta vår skadehanteringspolicy"</em> eller <em>"Vad säger riktlinjerna om handläggningstider?"</em></li>
-                        <li>Copilot söker bara i det du har behörighet till — ingenting delas med andra.</li>
-                        <li>Jämför: Hur lång tid tog det? Hittade den rätt?</li>
+                        <li>Gå till Copilot Chat &rarr; <strong>Inställningar</strong> &rarr; <strong>Anpassade instruktioner</strong>.</li>
+                        <li>Skriv in instruktioner som passar din roll, t.ex.:<br>
+                            <div class="code-block">Jag arbetar som skadehandläggare på ett djurförsäkringsbolag. Jag hanterar skadeärenden för hund-, katt- och hästförsäkringar. När du hjälper mig: 1) Använd ett professionellt men varmt tonfall, 2) Hänvisa alltid till att jag behöver verifiera information mot våra villkor, 3) Skriv kortfattat och i punktform när det passar, 4) Påminn mig om GDPR när personuppgifter nämns.</div>
+                        </li>
+                        <li>Testa genom att ställa en fråga: <em>"Hjälp mig förbereda mig inför ett samtal med en missnöjd djurägare vars hund nekats ersättning för tandvård"</em></li>
+                        <li>Jämför med en kollega som inte ställt in instruktioner — märker ni skillnad?</li>
                     </ol>
-                    <div class="note-box">
-                        <strong>Demomaterial:</strong> Använd filen "Skadehanteringspolicy" — ladda upp den i Copilot Chat och ställ frågor som <em>"Vad är maximal handläggningstid?"</em> eller <em>"Hur hanterar vi djurägare som vill överklaga?"</em>
-                    </div>
                 </div>
 
+                <!-- 3. TEAMS — MÖTEN -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">3</span>
-                        <span class="exercise-title">Bättre mail i Outlook</span>
+                        <span class="exercise-title">Sammanfatta möte i Teams</span>
                     </div>
-                    <p class="exercise-intro">Alla får samma scenario: en kund som är missnöjd med ett ersättningsbeslut. Skriv ett svar med Copilot-stöd. Jämför i lärparet.</p>
+                    <p class="exercise-intro">Testa att sammanfatta ett Teams-möte med Copilot — både via Recap-fliken och genom att gå med sent i ett pågående möte.</p>
                     <ol>
-                        <li>Öppna nytt mail i Outlook &rarr; klicka på <strong>Copilot-ikonen</strong> i verktygsfältet.</li>
-                        <li>Beskriv vad mailet ska handla om &rarr; låt Copilot skriva ett utkast.</li>
-                        <li>Justera ton: be Copilot göra det <em>"varmare"</em> eller <em>"kortare"</em>.</li>
-                        <li>Diskutera: Vad förbättrades? Vad behövde du ändra? Vad får du <strong>aldrig</strong> skicka utan att läsa igenom?</li>
+                        <li><strong>Recap:</strong> Gå till chatten för ett avslutat möte &rarr; klicka på <strong>Recap-fliken</strong> &rarr; välj "Recap the meeting" eller skriv en egen fråga.</li>
+                        <li><strong>Under pågående möte:</strong> Öppna Copilot-panelen och skriv: <em>"Kan du uppdatera mig om vad som sagts hittills och om det finns några uppgifter tilldelade till mig?"</em></li>
+                        <li>Be Copilot: <em>"Skapa mötesanteckningar med beslutspunkter och ansvariga"</em></li>
+                        <li><strong>OBS:</strong> Transkribering måste vara påslagen under mötet.</li>
+                        <li>Diskutera i lärparet: Vad var träffsäkert? Vad saknades? Litar du på sammanfattningen?</li>
                     </ol>
                     <div class="note-box">
-                        <strong>Demomaterial:</strong> Använd filen "Kundärende — missnöjd kund" som scenario. Klistra in kundens mail och be Copilot skriva ett professionellt, empatiskt svar.
+                        <strong>Demomaterial:</strong> Använd filen "Mötesanteckningar — Teamsmöte skadeavdelningen". Kopiera in i Copilot Chat och testa: <em>"Sammanfatta mötet och lista alla beslut med ansvarig person"</em>
                     </div>
                 </div>
 
+                <!-- 4. OUTLOOK — INKORG + MEJL -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">4</span>
-                        <span class="exercise-title">Sammanfatta och jämföra villkor</span>
+                        <span class="exercise-title">Copilot i Outlook — inkorg och mejlsvar</span>
                     </div>
-                    <p class="exercise-intro">Ta ett villkorsdokument. Be Copilot sammanfatta det och svara på en specifik fråga. Diskutera: kan du lita på svaret?</p>
+                    <p class="exercise-intro">Två delar: först sammanfatta din inkorg efter frånvaro, sedan skriva ett kundmejl med Copilot-stöd.</p>
                     <ol>
-                        <li>Öppna villkorsdokumentet i Word &rarr; Copilot-panelen dyker upp till höger.</li>
-                        <li>Skriv: <em>"Sammanfatta det här dokumentet"</em> eller <em>"Vad gäller för tandskador på hund?"</em></li>
-                        <li>Alternativt: ladda upp dokumentet i Copilot Chat och ställ frågor direkt.</li>
-                        <li><strong>Kritisk granskning:</strong> Stämmer svaret? Vad behöver du dubbelkolla?</li>
+                        <li><strong>Del A — Inkorgsöversikt:</strong> Öppna Copilot i Outlook och skriv: <em>"Jag har varit borta i några dagar, kan du sammanfatta de viktigaste mejlen och låta mig veta om det är något jag behöver följa upp snabbt?"</em></li>
+                        <li><strong>Del B — Standardinstruktioner:</strong> Gå till Copilot-inställningar i Outlook och lägg in instruktioner för mejlsvar, t.ex.: <em>"Svara alltid professionellt och empatiskt. Håll det kort, använd punktform. Hänvisa till att kunden kan begära omprövning när det gäller avslag."</em></li>
+                        <li><strong>Del C — Kundmejl:</strong> Öppna nytt mejl &rarr; Copilot-ikonen &rarr; beskriv scenariot &rarr; låt Copilot skriva ett utkast. Testa sedan att justera: <em>"Gör det varmare"</em>, <em>"Korta ner det"</em>, <em>"Gör det mer formellt"</em>.</li>
+                        <li>Diskutera: Vad förbättrades? Vad behövde du ändra? Vad får du <strong>aldrig</strong> skicka utan att läsa igenom?</li>
                     </ol>
                     <div class="note-box">
-                        <strong>Demomaterial:</strong> Använd filen "Villkor Hundförsäkring Bas". Testa att ställa specifika frågor som <em>"Täcks korsbandsskador?"</em> eller <em>"Vad är karenstiden för tandbehandling?"</em> — och granska svaret kritiskt mot originaltexten.
+                        <strong>Demomaterial:</strong> Använd filen "Kundärende — missnöjd kund". Klistra in kundens mejl och be Copilot: <em>"Skriv ett professionellt, empatiskt svar som förklarar beslutet tydligt och informerar om rätten till omprövning"</em>
+                    </div>
+                </div>
+
+                <!-- 5. SHAREPOINT / FILANALYS -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">5</span>
+                        <span class="exercise-title">Hitta rätt i SharePoint + analysera filer</span>
+                    </div>
+                    <p class="exercise-intro">Copilot kan söka i era dokument och analysera bifogade filer. Testa båda sätten.</p>
+                    <ol>
+                        <li><strong>Söka i SharePoint:</strong> Öppna Copilot Chat och skriv: <em>"Hitta vår skadehanteringspolicy"</em> eller <em>"Vad säger riktlinjerna om handläggningstider för komplexa sjukdomsärenden?"</em></li>
+                        <li><strong>Analysera bifogad fil:</strong> Klicka på 📎 och bifoga demofilen "Skadehanteringspolicy". Skriv: <em>"Analysera det bifogade dokumentet och ge mig en sammanfattning av de viktigaste punkterna"</em></li>
+                        <li>Ställ följdfrågor: <em>"Vem har behörighet att besluta om ärenden över 30 000 kr?"</em> eller <em>"Hur ska vi hantera djurägare som hotar med ARN?"</em></li>
+                        <li>Jämför: Hur lång tid tog det jämfört med att söka manuellt? Hittade den rätt?</li>
+                    </ol>
+                </div>
+
+                <!-- 6. VILLKORSDOKUMENT I WORD -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">6</span>
+                        <span class="exercise-title">Sammanfatta villkor i Word</span>
+                    </div>
+                    <p class="exercise-intro">Öppna ett villkorsdokument direkt i Word. Copilot-panelen aktiveras automatiskt — testa att ställa frågor om innehållet.</p>
+                    <ol>
+                        <li>Öppna <strong>villkor-hundforsakring-bas.docx</strong> i Word &rarr; Copilot-panelen dyker upp till höger.</li>
+                        <li>Skriv: <em>"Sammanfatta det här dokumentet i 5 punkter"</em></li>
+                        <li>Ställ specifika frågor: <em>"Vad gäller för tandskador på hund?"</em>, <em>"Täcks korsbandsskador?"</em>, <em>"Vad är karenstiden för höftledsdysplasi?"</em></li>
+                        <li><strong>Kritisk granskning:</strong> Jämför Copilots svar mot originaltexten. Stämmer det? Vad missades?</li>
+                    </ol>
+                    <div class="note-box warning">
+                        <strong>Poängen:</strong> Copilot kan ge snabba svar om komplexa villkor — men du har <em>alltid</em> ansvar för att svaret stämmer. Testa medvetet en fråga där svaret är otydligt i villkoren.
                     </div>
                 </div>
 
@@ -292,11 +330,6 @@
             <!-- ===== TILLFÄLLE 2 ===== -->
             <div id="t2-tab" class="tab-content">
 
-                <div class="card">
-                    <h3>Tillfälle 2 — AI-strategi och ledarskap</h3>
-                    <p>Det här tillfället fokuserar på diskussion och reflektion, inte övningar i Copilot. Du förbereder dig genom hemuppgiften från tillfälle 1.</p>
-                </div>
-
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">&#9733;</span>
@@ -305,12 +338,45 @@
                     <p class="exercise-intro">Berätta för din lärpartner: Vad testade du? Vad lärde du dig? 10 minuter per par.</p>
                 </div>
 
+                <!-- SCHEMALÄGGA PROMPTS -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">1</span>
+                        <span class="exercise-title">Schemalägga prompts — din AI-stabschef</span>
+                    </div>
+                    <p class="exercise-intro">Du kan schemalägga en prompt som körs automatiskt — t.ex. varje måndag morgon. Perfekt som ledarverktyg.</p>
+                    <ol>
+                        <li>Öppna M365 Copilot Chat och skapa en schemalagd prompt.</li>
+                        <li>Ställ in den att köras <strong>varje måndag kl. 08:00</strong> med prompten:<br>
+                            <div class="code-block">Agera som min stabschef. Titta i min inkorg och sammanställ de tre viktigaste sakerna jag bör fokusera på den här veckan. Gå sedan igenom min kalender och ge mig en kort sammanfattning av vad som händer. Flagga eventuella konflikter eller dubbelboningar.</div>
+                        </li>
+                        <li>Diskutera i lärparet: Vilka andra återkommande uppgifter skulle ni vilja automatisera?</li>
+                        <li>Exempel: <em>"Varje fredag kl. 15: sammanfatta veckans avslutade skadeärenden och flagga de med längst handläggningstid"</em></li>
+                    </ol>
+                </div>
+
+                <!-- COPILOT I GRUPPCHATTAR -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">2</span>
+                        <span class="exercise-title">Copilot i gruppchattar i Teams</span>
+                    </div>
+                    <p class="exercise-intro">Copilot kan bjudas in i en gruppchatt med dina kollegor. Tillsammans kan ni be den om hjälp — i realtid.</p>
+                    <ol>
+                        <li>Skapa en gruppchatt i Teams med din lärpartner.</li>
+                        <li>Bjud in Copilot till chatten (via @Copilot eller genom att lägga till den som deltagare).</li>
+                        <li>Testa att planera tillsammans: <em>"Vi behöver planera en intern workshop om Copilot för vårt team. Hjälp oss ta fram en agenda för 2 timmar."</em></li>
+                        <li>Bygg vidare: <em>"Kan du lägga till en punkt om datasäkerhet och GDPR i agendan?"</em></li>
+                        <li>Diskutera: Hur kan detta användas i ert dagliga samarbete?</li>
+                    </ol>
+                </div>
+
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">&#9733;</span>
-                        <span class="exercise-title">Reflektionsfrågor under tillfälle 2</span>
+                        <span class="exercise-title">Reflektionsfrågor</span>
                     </div>
-                    <p class="exercise-intro">Ha dessa frågor med dig under passet:</p>
+                    <p class="exercise-intro">Ha dessa frågor med dig under tillfällets diskussionspass:</p>
                     <ol>
                         <li>Vad krävs av mig som chef när AI förändrar arbetssättet i mitt team?</li>
                         <li>Hur pratar jag om AI med medarbetare som känner sig hotade — utan att bli peppig på ett sätt folk inte köper?</li>
@@ -342,6 +408,59 @@
                     <p class="exercise-intro">Presentera ditt processområde för din lärpartner: vad hittade du, vad tänker du testa?</p>
                 </div>
 
+                <!-- EXCEL — =COPILOT() FORMEL -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">1</span>
+                        <span class="exercise-title">Copilot-formeln i Excel</span>
+                    </div>
+                    <p class="exercise-intro">Formeln <code>=copilot()</code> är en ny funktion som kan analysera data, kategorisera text och till och med hämta extern information — direkt i en cell.</p>
+                    <ol>
+                        <li>Öppna demofilen med skadedata i Excel.</li>
+                        <li><strong>Känsloanalys:</strong> I en ny kolumn, skriv: <code>=copilot("Kategorisera denna kundfeedback som positiv, neutral eller negativ och lägg till en passande emoji", A2)</code></li>
+                        <li><strong>Sammanfattning:</strong> Testa: <code>=copilot("Sammanfatta detta ärende i en mening", B2)</code></li>
+                        <li><strong>Copilot Chat i Excel:</strong> Öppna Copilot-panelen och skriv: <em>"Analysera detta kalkylblad och ge mig de viktigaste insikterna"</em></li>
+                        <li>Diskutera: Vad kan ni använda detta till i er vardag? Vilka analyser gör ni idag manuellt?</li>
+                    </ol>
+                    <div class="note-box">
+                        <strong>Demomaterial:</strong> Använd den bifogade Excel-filen med skadedata. Testa att ställa frågor som <em>"Vilken skadetyp har längst genomsnittlig handläggningstid?"</em> eller <em>"Visa trenden för inkomna ärenden per månad"</em>
+                    </div>
+                </div>
+
+                <!-- POWERPOINT — SKAPA PRESENTATION -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">2</span>
+                        <span class="exercise-title">Skapa en presentation med Copilot</span>
+                    </div>
+                    <p class="exercise-intro">Copilot kan skapa hela presentationer — från disposition till färdiga slides. Testa med ett ämne från er vardag.</p>
+                    <ol>
+                        <li>Öppna PowerPoint &rarr; Ny presentation &rarr; Klicka på <strong>Copilot</strong>.</li>
+                        <li>Skriv: <em>"Skapa en presentation om hur Sveland arbetar med ansvarsfull AI-användning. Inkludera: vad Copilot kan och inte kan, GDPR-hänsyn, vårt ansvar som medarbetare, och konkreta tips för vardagen. Max 8 slides."</em></li>
+                        <li>Granska resultatet. Be Copilot justera: <em>"Gör slide 3 mer konkret med exempel"</em> eller <em>"Lägg till en slide om vanliga misstag"</em></li>
+                        <li><strong>Bildredigering:</strong> Klicka på en bild i presentationen och testa de inbyggda AI-verktygen: ta bort bakgrund, förbättra skärpa, eller ändra stil.</li>
+                    </ol>
+                    <div class="note-box">
+                        <strong>Alternativt scenario:</strong> <em>"Skapa en kort presentation (5 slides) som jag kan visa mitt team om varför vi satsar på AI-verktyg och vad det innebär för dem."</em> — Perfekt för ambassadörsrollen ni diskuterade i tillfälle 2.
+                    </div>
+                </div>
+
+                <!-- WORD — SKAPA UTKAST -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">3</span>
+                        <span class="exercise-title">Skapa utkast i Word med Copilot</span>
+                    </div>
+                    <p class="exercise-intro">Copilot i Word kan skapa dokument från en beskrivning — och sedan hjälpa dig finslipa.</p>
+                    <ol>
+                        <li>Öppna ett tomt Word-dokument &rarr; klicka på Copilot-ikonen.</li>
+                        <li>Skriv: <em>"Skriv ett utkast till en intern kommunikation till alla medarbetare på skadeavdelningen. Ämne: Vi inför Copilot som stöd i skadehanteringen. Tonen ska vara positiv men ärlig — erkänn att det är nytt och att vi lär oss tillsammans. Inkludera vad Copilot kan hjälpa med, vad det INTE ersätter, och hur medarbetarna kan börja testa."</em></li>
+                        <li>Justera: <em>"Gör det kortare och mer direkt"</em> eller <em>"Lägg till en punkt om datasäkerhet"</em></li>
+                        <li>Testa att omvandla text: <em>"Förvandla avsnittet om användningsområden till en tabell"</em></li>
+                    </ol>
+                </div>
+
+                <!-- KÄLLKRITIK -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">&#9733;</span>
@@ -355,6 +474,7 @@
                     </ol>
                 </div>
 
+                <!-- INDIVIDUELL PLAN -->
                 <div class="exercise">
                     <div class="exercise-header">
                         <span class="exercise-number">&#9733;</span>
