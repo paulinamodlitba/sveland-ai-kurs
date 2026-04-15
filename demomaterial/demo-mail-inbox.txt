@@ -1,0 +1,211 @@
+DEMOMEJL FÖR COPILOT-ÖVNINGAR
+Skicka dessa till dig själv innan kursen så att din inkorg har
+realistiskt innehåll att demo:a med. Kopiera ett mejl i taget.
+
+===================================================================
+
+MEJL 1 — Från: Maria Lindström (avdelningschef)
+Ämne: Uppdatering handläggningstider — behöver input före fredag
+---
+
+Hej allihop,
+
+Som ni vet har vi sett en ökning av genomsnittlig handläggningstid de senaste tre veckorna (från 3,1 till 4,2 dagar). Ledningen har bett om en åtgärdsplan senast fredag.
+
+Jag behöver input från var och en av er:
+1. Vilka ärendetyper tar längst tid just nu, och varför?
+2. Finns det moment i processen som kan förenklas utan att kvaliteten påverkas?
+3. Har ni förslag på hur vi kan fördela arbetsbelastningen bättre?
+
+Skicka era tankar till mig senast torsdag kl. 12. Jag sammanställer och skickar vidare till ledningsgruppen.
+
+Tack för ert engagemang — jag vet att det är pressat just nu.
+
+/Maria
+
+---
+
+MEJL 2 — Från: Peter Bergman (teamledare)
+Ämne: Ärende #2025-4412 — djurägaren vill eskalera
+---
+
+Hej Maria,
+
+Jag har nu pratat med djurägaren i ärende #2025-4412 (Golden Retriever, korsbandsskada, specialistklinik 45 000 kr). Hon är fortfarande mycket upprörd och säger att hon tänker anmäla till ARN om vi inte höjer ersättningen.
+
+Jag har förklarat villkoren och erbjudit omprövning, men hon upplever att vi inte lyssnar. Hon sa ordagrant: "Jag har betalat er i sex år och nu när jag behöver er sviker ni mig."
+
+Jag föreslår att du tar ett samtal med henne direkt. Hon verkar lugna sig om hon får prata med någon "högre upp". Jag tror inte vi kan ändra beslutet, men vi kan visa att vi tar henne på allvar.
+
+Hennes nummer: 073-XXX XX XX. Bäst att nå på förmiddagar.
+
+/Peter
+
+---
+
+MEJL 3 — Från: Kristina Holm (veterinärkonsult)
+Ämne: Sv: Ärende #2025-4445 — klassificering allergisk reaktion
+---
+
+Hej,
+
+Jag har nu gått igenom journalanteckningarna för Labradoren i ärende #2025-4445.
+
+Min bedömning: den allergiska reaktionen efter vaccination bör klassas som olycksfall, inte sjukdom. Argumenten:
+- Reaktionen var plötslig och oväntad (uppfyller kriteriet för yttre händelse)
+- Vaccinationen i sig var en extern åtgärd som utlöste reaktionen
+- Liknande fall har av branschpraxis behandlats som olycksfall
+
+Det innebär att karenstiden inte gäller (olycksfall har ingen karens) och att handläggningstiden bör vara max 3 arbetsdagar.
+
+Jag bifogar mitt utlåtande som PDF. Hör av dig om du vill diskutera.
+
+/Kristina
+
+---
+
+MEJL 4 — Från: HR-avdelningen
+Ämne: Påminnelse: Medarbetarsamtal Q2 ska bokas in
+---
+
+Hej alla chefer,
+
+Påminnelse om att medarbetarsamtal för Q2 ska vara genomförda senast 30 maj. Bokningsformuläret finns på intranätet under Personal > Medarbetarsamtal.
+
+Glöm inte att:
+- Använda den uppdaterade mallen (v2.3)
+- Dokumentera överenskomna mål i HR-systemet inom 5 arbetsdagar
+- Flagga eventuella kompetensutvecklingsbehov till oss
+
+Om ni har medarbetare som är sjukskrivna — boka ändå in ett samtal med den som vikarierar eller skjut på det och meddela oss.
+
+Mvh,
+HR-teamet
+
+---
+
+MEJL 5 — Från: Sara Nilsson (skadehandläggare)
+Ämne: Kort fråga om villkor — tandvård katt
+---
+
+Hej Maria,
+
+Snabb fråga: Jag har en djurägare som vill veta om tandextraktion under narkos täcks av kattförsäkring Bas. Jag är 90% säker på att svaret är nej (tandvård ingår inte i Bas), men det är specifikt en akut tandinfektion som utvecklats till ett livshotande tillstånd.
+
+I villkoren står det att "akut tandinfektion som kräver omedelbar behandling för att undvika livshotande tillstånd" är ett undantag. Men veterinären skriver att det "kan utvecklas till ett livshotande tillstånd" — inte att det redan ÄR livshotande.
+
+Hur tolkar vi det? Vill inte fatta fel beslut här.
+
+/Sara
+
+---
+
+MEJL 6 — Från: IT-avdelningen
+Ämne: Driftstörning Teams — löst
+---
+
+Hej,
+
+Vi vill informera om att driftstörningen i Teams som pågått sedan kl. 09:15 idag nu är löst (kl. 11:42). Problemen berodde på en uppdatering av Microsofts servrar som påverkade transkriberingsfunktionen.
+
+Påverkan:
+- Möten som hölls mellan 09:15–11:42 saknar transkribering
+- Recap-funktionen fungerar inte för dessa möten
+- Övriga Teams-funktioner (chatt, samtal, filer) var opåverkade
+
+Alla funktioner ska nu fungera normalt. Kontakta IT-support om ni upplever kvarstående problem.
+
+Mvh,
+IT-drift
+
+---
+
+MEJL 7 — Från: Åsa Johansson (SALT, uppdragsgivare)
+Ämne: AI-utbildningen — praktisk detalj
+---
+
+Hej Paulina och Maria,
+
+Bara en snabb check inför utbildningen nästa vecka:
+
+1. Har alla deltagare fått Copilot-licenser aktiverade? Ursula sa att det var 2 personer kvar förra veckan.
+2. Boken "Vad fan ska vi med AI till?" — har den kommit fram till kontoret?
+3. Kan vi få deltagarnas namn och roller senast onsdag? Behöver för certifikaten.
+
+Ser fram emot att köra igång!
+
+/Åsa
+
+---
+
+MEJL 8 — Från: Jonas Eriksson (skadehandläggare)
+Ämne: Feedback efter första veckan med Copilot
+---
+
+Hej Maria,
+
+Du bad oss testa Copilot under veckan, så här är mina reflektioner:
+
+Det jag gillade:
+- Sammanfatta långa veterinärutlåtanden — sparade mig säkert 20 minuter igår
+- Söka i policydokument — hittade svaret på en fråga om behörighetsnivåer på 10 sekunder istället för att bläddra
+- Skriva utkast till kundmejl — tonen blev bättre än vad jag brukar få till
+
+Det jag INTE gillade:
+- Den gav fel svar om karenstid för korsbandsskada (sa 3 månader, ska vara 6)
+- Jag glömde nästan att dubbelkolla ett svar innan jag skickade det till en kund
+- Känns konstigt att "fråga en robot" istället för en kollega
+
+Sammanfattning: användbart som stöd, men jag litar inte på den fullt ut ännu. Och det kanske är rätt?
+
+/Jonas
+
+---
+
+MEJL 9 — Från: David Magnusson (skadehandläggare, sjukskriven)
+Ämne: Uppdatering från mig
+---
+
+Hej Maria,
+
+Tack för att du hörde av dig. Jag mår bättre och planerar att komma tillbaka den 12 maj (halvtid första veckan om det går bra).
+
+Jag har ett par pågående ärenden som jag vill flagga:
+- #2025-4438: Hästärende, väntar på veterinärutlåtande från SLU. Borde komma in denna vecka.
+- #2025-4441: Hundärende, djurägaren har lovat komplettera med kvitton men inte hört av sig på 10 dagar. Kan behöva en påminnelse.
+
+Har Jonas tagit över resten? Jag vill gärna ha en kort överlämning innan jag börjar igen.
+
+Hälsningar,
+David
+
+---
+
+MEJL 10 — Från: Extern — Försäkringsbranschens nyhetsbrev
+Ämne: AI Act träder i kraft — vad innebär det för försäkringsbranschen?
+---
+
+Hej,
+
+EU:s AI-förordning (AI Act) börjar gälla stegvis från 2025. Här är det viktigaste för er som arbetar med försäkring:
+
+HÖGRISKKLASSIFICERING
+- Automatiserade beslut om försäkringsersättning kan klassas som högrisk
+- Krav på mänsklig tillsyn, transparens och dokumentation
+- Riskbedömning och konsekvensanalys krävs innan AI-system tas i drift
+
+VAD NI BÖR GÖRA NU
+1. Kartlägg vilka AI-verktyg ni använder (inkl. Copilot, chattbotar, automatiserade processer)
+2. Bedöm om något av era användningsområden faller under högriskklassificering
+3. Upprätta dokumentation om hur AI-verktygen används och vilka beslut de påverkar
+4. Säkerställ att mänsklig granskning alltid sker innan beslut som påverkar kunder
+
+VIKTIGA DATUM
+- Februari 2025: Förbud mot oacceptabel AI-risk
+- Augusti 2025: Regler för AI-system för allmänt bruk
+- Augusti 2026: Fullständig tillämpning av högriskklassificering
+
+Läs hela analysen: [länk]
+
+Med vänlig hälsning,
+Försäkringsbranschens Nyhetsbrev
