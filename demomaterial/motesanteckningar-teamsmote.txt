@@ -1,0 +1,66 @@
+MÖTESANTECKNINGAR
+Teamsmöte — Skadeavdelningen, veckogenomgång
+Datum: 2025-04-28, kl. 09.00–09.45
+Plats: Teams
+Deltagare: Maria Lindström (avdelningschef), Jonas Eriksson (skadehandläggare), Sara Nilsson (skadehandläggare), Peter Bergman (teamledare), Anna Johansson (kundservice), Kristina Holm (veterinärkonsult)
+Frånvarande: David Lund (sjukskriven)
+
+---
+
+1. GENOMGÅNG AV VECKAN
+
+Maria inledde med att gå igenom statistiken från förra veckan:
+- 347 inkomna skadeärenden (upp 12% jämfört med samma vecka förra året)
+- 289 avslutade ärenden
+- Genomsnittlig handläggningstid: 4,2 dagar (mål: 3 dagar)
+- Kundnöjdhet (NPS): 62 (ned från 68 föregående vecka)
+
+Maria lyfte att handläggningstiderna har ökat tre veckor i rad och att vi behöver en plan. Jonas påpekade att komplexiteten i ärendena ökat — fler tvistiga fall kring diagnostik och veterinärkostnader. Sara höll med och nämnde att hon haft tre fall bara den senaste veckan där djurägaren ifrågasatt veterinärens kostnadsuppskattning.
+
+2. PÅGÅENDE ÄRENDEN — SÄRSKILDA FALL
+
+Peter tog upp tre ärenden som kräver extra uppmärksamhet:
+
+a) Ärende #2025-4412: Golden Retriever, korsbandsskada. Djurägaren vill operera på specialistklinik i Stockholm (kostnad 45 000 kr). Vårt villkor täcker upp till 30 000 kr. Djurägaren hotar med Allmänna reklamationsnämnden. Peter föreslår att vi kontaktar djurägaren proaktivt och erbjuder ett möte.
+
+b) Ärende #2025-4398: Katt, tandproblem. Veterinären rekommenderar tandextraktion under narkos. Djurägaren hade ingen tilläggsförsäkring för tandvård. Föreslagen hantering: avslag med tydlig hänvisning till villkoren, men med erbjudande om att uppgradera försäkringen inför framtiden.
+
+c) Ärende #2025-4445: Labrador, allergisk reaktion efter vaccination. Frågan är om detta klassas som sjukdom eller olycksfall. Kristina ska utreda.
+
+3. PERSONALSITUATION
+
+Maria informerade om att David Lund förväntas vara sjukskriven ytterligare 2–3 veckor. Vi har ingen vikarie ännu. Jonas erbjöd sig att ta Davids mest akuta ärenden, men påpekade att hans egen arbetsbelastning redan är hög. Sara nämnde att hon känt av stress den senaste tiden och att det påverkar sömnen.
+
+Maria: "Vi behöver ta det här på allvar. Jag vill att alla flaggar om det börjar bli för mycket. Hellre att vi omfördelar tidigt än att någon går in i väggen."
+
+Peter föreslog att vi tar in en tillfällig resurs från kundservice för enklare ärenden. Anna bekräftade att hon kan hjälpa till med initial ärenderegistrering och sortering 2 dagar i veckan.
+
+4. NYTT DIGITALT VERKTYG — COPILOT
+
+Maria berättade att ledningsgruppen beslutat att alla chefer och specialister ska delta i en AI-utbildning i maj (3 halvdagar). Syftet är att lära sig använda Copilot i Microsoft 365 i vardagen.
+
+Jonas: "Ska det verkligen ersätta det vi gör? Jag ser inte hur en AI kan bedöma en veterinärfaktura."
+Maria: "Ingen pratar om att ersätta. Det handlar om att avlasta — sammanfattningar, sökning, utkast. Vi testar och utvärderar."
+Kristina: "Jag ser potentialen i att sammanfatta längre veterinärutlåtanden. Det tar tid att läsa igenom allt."
+Sara: "Om det kan hjälpa mig skriva snabbare kundmail så är jag positiv."
+
+Beslut: Maria skickar ut inbjudan till utbildningen under veckan.
+
+5. BESLUT OCH ÅTGÄRDER
+
+- Jonas tar över Davids mest akuta ärenden (5 st) under veckan
+- Anna stöttar med ärenderegistrering tisdag + torsdag
+- Peter kontaktar djurägaren i ärende #2025-4412 för proaktivt möte
+- Kristina utreder klassificeringen av ärende #2025-4445 och återkommer onsdag
+- Maria eskalerar behovet av tillfällig vikarie till HR
+- Maria skickar inbjudan till AI-utbildning
+- Sara bokar ett samtal med Maria om arbetsbelastning (privat)
+
+6. NÄSTA MÖTE
+
+Måndag 5 maj, kl. 09.00. Samma format.
+
+---
+
+Antecknat av: Peter Bergman
+Distribuerat till: Samtliga deltagare + David Lund (för kännedom)

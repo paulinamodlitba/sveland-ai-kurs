@@ -1,0 +1,126 @@
+SVELAND DJURFÖRSÄKRING
+Intern policy: Skadehantering
+Version 3.2 | Gäller från 2025-01-01
+Ansvarig: Avdelningschef Skadereglering
+
+===================================================================
+
+1. SYFTE
+
+Denna policy fastställer riktlinjer för skadehantering vid Sveland Djurförsäkring. Syftet är att säkerställa en enhetlig, rättvis och effektiv hantering av skadeärenden — med hög kundnöjdhet och god regelefterlevnad.
+
+2. TILLÄMPNING
+
+Policyn gäller alla medarbetare som hanterar skadeärenden, inklusive skadehandläggare, teamledare, veterinärkonsulter och kundservicemedarbetare med ärendebehörighet.
+
+3. GRUNDPRINCIPER
+
+3.1 Kundens perspektiv först
+Varje kontakt med en djurägare ska präglas av empati och professionalism. Djurägare befinner sig ofta i en stressad situation — deras djur är sjukt eller skadat. Vår uppgift är att göra processen så enkel och transparent som möjligt.
+
+3.2 Saklighet och objektivitet
+Alla beslut ska baseras på gällande villkor, veterinärmedicinsk bedömning och dokumentation. Personliga åsikter om djurhållning, ras eller djurägare får aldrig påverka handläggningen.
+
+3.3 Skyndsamhet
+Alla ärenden ska handläggas utan onödigt dröjsmål. Maximal handläggningstid framgår av avsnitt 6.
+
+4. ÄRENDEHANTERINGSPROCESSEN
+
+4.1 Mottagning och registrering
+- Alla inkomna skadeanmälningar ska registreras i ärendesystemet inom 4 arbetstimmar.
+- Automatisk bekräftelse skickas till djurägaren via e-post.
+- Ärenden kategoriseras: Olycksfall / Sjukdom / Liv / Övrigt.
+
+4.2 Initial bedömning
+- Handläggaren gör en första bedömning inom 1 arbetsdag.
+- Om komplettering behövs ska begäran skickas till djurägaren inom 2 arbetsdagar med tydlig specifikation av vad som saknas.
+
+4.3 Utredning
+- Veterinärintyg och fakturor granskas mot gällande villkor.
+- Vid osäkerhet om medicinsk bedömning ska intern veterinärkonsult kontaktas.
+- Handläggaren dokumenterar alla bedömningar och kontakter i ärendejournalen.
+
+4.4 Beslut
+- Ersättningsbeslut fattas av behörig handläggare (se behörighetsnivåer, avsnitt 7).
+- Beslutet ska vara tydligt motiverat med hänvisning till villkor och eventuella undantag.
+- Djurägaren informeras skriftligt om beslutet, inklusive information om hur man kan begära omprövning.
+
+4.5 Utbetalning
+- Godkänd ersättning utbetalas inom 5 arbetsdagar efter beslut.
+- Utbetalning sker till det konto djurägaren angett.
+
+5. KOMMUNIKATION MED DJURÄGARE
+
+5.1 Tonalitet
+- Professionell, varm och tydlig.
+- Undvik försäkringsjargong — skriv så att alla förstår.
+- Vid avslag: förklara varför på ett respektfullt sätt och hänvisa till rätt villkorspunkt.
+
+5.2 Svåra samtal
+- Om djurägaren är upprörd: lyssna, bekräfta känslan, förklara processen.
+- Hänvisa aldrig till "policy" utan att förklara vad det innebär i praktiken.
+- Erbjud alltid möjligheten att tala med en chef eller teamledare.
+- Dokumentera alla samtal med upprörd djurägare i ärendejournalen.
+
+5.3 Proaktiv kommunikation
+- Om handläggningstiden riskerar att överstiga 5 dagar: kontakta djurägaren och informera om förseningens orsak och förväntad tidsram.
+- Skicka statusuppdatering minst var 5:e arbetsdag i pågående ärenden.
+
+6. HANDLÄGGNINGSTIDER
+
+| Ärendekategori          | Maximal handläggningstid |
+|------------------------|--------------------------|
+| Olycksfall, enkel      | 3 arbetsdagar           |
+| Olycksfall, komplex    | 10 arbetsdagar          |
+| Sjukdom, enkel         | 5 arbetsdagar           |
+| Sjukdom, komplex       | 15 arbetsdagar          |
+| Livförsäkring          | 10 arbetsdagar          |
+| Överklagande/omprövning| 20 arbetsdagar          |
+
+Vid komplexa ärenden som kräver extern veterinärbedömning kan tiden förlängas med upp till 10 arbetsdagar, förutsatt att djurägaren informeras.
+
+7. BEHÖRIGHETSNIVÅER
+
+| Beloppsgräns           | Behörig beslutsfattare        |
+|------------------------|-------------------------------|
+| Upp till 10 000 kr     | Skadehandläggare              |
+| 10 001 – 30 000 kr     | Teamledare                    |
+| 30 001 – 75 000 kr     | Avdelningschef                |
+| Över 75 000 kr         | Skadedirektör                 |
+
+8. OMPRÖVNING OCH ÖVERKLAGANDE
+
+8.1 Intern omprövning
+Djurägaren har rätt att begära omprövning av ett beslut inom 30 dagar. Omprövning görs av annan handläggare än den som fattade ursprungsbeslutet.
+
+8.2 Extern prövning
+Om djurägaren inte är nöjd efter omprövning hänvisas till:
+- Allmänna reklamationsnämnden (ARN)
+- Konsumenternas Försäkringsbyrå
+- Allmän domstol
+
+Information om dessa instanser ska alltid finnas med i omprövningsbeslutet.
+
+9. BEDRÄGERIPREVENTION
+
+- Alla handläggare ska vara uppmärksamma på tecken på försäkringsbedrägeri.
+- Misstanke om bedrägeri rapporteras omedelbart till teamledare, som eskalerar till utredningsenheten.
+- Handläggaren får aldrig informera djurägaren om att bedrägerimisstanke föreligger.
+
+10. DOKUMENTATION OCH ARKIVERING
+
+- Alla ärenden dokumenteras i ärendesystemet.
+- Journalanteckningar ska vara sakliga, objektiva och tidsstämplade.
+- Ärenden arkiveras i 10 år efter avslut, i enlighet med Finansinspektionens regelverk.
+
+11. UPPFÖLJNING OCH KVALITETSKONTROLL
+
+- Teamledare genomför stickprovskontroller på minst 5% av avslutade ärenden per månad.
+- Kundnöjdhet (NPS) mäts löpande och rapporteras månadsvis till avdelningschef.
+- Avvikelser från denna policy rapporteras och utreds enligt avvikelsehanteringsrutinen.
+
+===================================================================
+
+Senast reviderad: 2025-01-15
+Nästa revision: 2026-01-15
+Godkänd av: Eva Sandberg, Skadedirektör

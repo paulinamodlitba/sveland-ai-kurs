@@ -1,0 +1,97 @@
+KUNDÄRENDE — ÖVNINGSSCENARIO FÖR COPILOT
+===================================================================
+
+BAKGRUND
+Du är skadehandläggare på Sveland Djurförsäkring. Du har fått nedanstående
+mail från en djurägare som är missnöjd med ett ersättningsbeslut. Din uppgift
+är att skriva ett professionellt, empatiskt och korrekt svar.
+
+===================================================================
+
+INKOMMANDE MAIL FRÅN KUND
+-------------------------------------------------------------------
+
+Från: Karin Andersson <karin.andersson@email.se>
+Till: skador@sveland.se
+Ämne: ÄRENDE #2025-4387 — Helt oacceptabelt beslut
+Datum: 2025-04-25
+
+Hej,
+
+Jag skriver till er för att jag är djupt besviken och frustrerad över ert
+beslut att bara ersätta 18 500 kr av veterinärkostnaden för min hund Bella
+(labrador, 6 år). Den totala kostnaden för hennes knäoperation var 42 000 kr.
+
+Bella fick en korsbandsskada i mars och behövde opereras akut. Vår ordinarie
+veterinär hänvisade oss till Regiondjursjukhuset eftersom de är specialiserade
+på ortopedi. Vi hade inget val — Bella hade ont och kunde knappt gå.
+
+Jag har betalat försäkringspremien i 6 år utan att göra ett enda anspråk.
+Och nu när jag faktiskt behöver försäkringen får jag knappt halva beloppet?
+Det känns som att ni letar efter kryphål för att slippa betala.
+
+Er motivering var att "ersättning lämnas enligt gällande villkor upp till
+maxbeloppet för veterinärvård". Men ni har inte ens förklarat VARFÖR
+maxbeloppet är så lågt eller varför specialistvård inte täcks fullt ut.
+
+Jag har rekommenderat Sveland till alla mina vänner med hundar i 6 år.
+Just nu skäms jag för det.
+
+Jag vill ha:
+1. En tydlig förklaring av beräkningen
+2. En omprövning av beslutet
+3. Information om hur jag tar detta vidare om ni inte ändrar er
+
+Med vänlig hälsning,
+Karin Andersson
+
+Telefon: 073-XXX XX XX
+Försäkringsnr: SVE-2019-HU-44821
+
+===================================================================
+
+RELEVANTA FAKTA (för att kunna skriva svar)
+-------------------------------------------------------------------
+
+- Karin har försäkringen "Hundförsäkring Bas" med maxersättning 25 000 kr
+  per skadefall för veterinärvård.
+- Självrisk: 2 500 kr + 20% av resterande kostnad.
+- Beräkning: 42 000 - 2 500 (självrisk) = 39 500. 39 500 × 0,80 = 31 600.
+  Tak: 25 000 kr. Alltså ersätts 25 000 - 2 500 - 4 000 (20% av 20 000)
+  = 18 500 kr (korrekt utbetalt enligt villkoren, men beräkningen
+  kan behöva förklaras tydligare).
+
+  Förenklad förklaring:
+  Veterinärkostnad: 42 000 kr
+  Självrisk fast del: -2 500 kr
+  Rörlig självrisk (20%): -7 900 kr
+  Summa efter självrisk: 31 600 kr
+  Maxbelopp Bas: 25 000 kr
+  Utbetalt: 18 500 kr (31 600 begränsas av tak minus rörlig del)
+
+  OBS: Siffran 18 500 kr beror på att taket 25 000 kr gäller INKLUSIVE
+  den rörliga självrisken, dvs. max utbetalning = 25 000 - (25 000 × 0,20)
+  - 2 500 = 17 500 kr... Det finns alltså en viss otydlighet i beräkningen
+  som kan diskuteras. Poängen med övningen är att AI kan hjälpa till att
+  formulera ett tydligt svar — men INTE att verifiera beräkningar.
+
+- Karin har rätt att begära omprövning inom 30 dagar.
+- Med "Hundförsäkring Plus" hade maxbeloppet varit 50 000 kr.
+- Karin har varit kund sedan 2019 utan tidigare skadeanmälningar.
+
+===================================================================
+
+ÖVNINGSINSTRUKTION
+-------------------------------------------------------------------
+
+1. Klistra in kundens mail i Copilot (eller i en ny chatt).
+2. Be Copilot: "Hjälp mig skriva ett professionellt och empatiskt svar
+   till denna missnöjda kund. Förklara beslutet tydligt men visa att vi
+   förstår hennes frustration."
+3. Justera tonen: be om "varmare", "kortare" eller "mer formellt" och
+   jämför resultaten.
+4. Diskutera i lärparet:
+   - Vad förbättrades med Copilot-stöd?
+   - Vad behövde du ändra?
+   - Vad får du ALDRIG skicka utan att läsa igenom och verifiera?
+   - Hur hanterade Copilot beräkningen — stämde den?
