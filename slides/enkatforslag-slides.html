@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Enkätresultat — Tillfälle 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #2a2a2a; padding: 40px; }
+
+        /* 16:9 slides at 1280×720 (fits most screens, scales cleanly to 1920×1080) */
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFF6F0;
+            color: #411B38;
+            padding: 70px 90px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-label { position: absolute; top: 28px; right: 40px; font-size: 13px; color: #C87C5C; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+        .slide-title { font-size: 44px; font-weight: 700; line-height: 1.1; margin-bottom: 8px; color: #411B38; }
+        .slide-subtitle { font-size: 20px; color: #7A4864; margin-bottom: 40px; font-weight: 400; }
+
+        /* ============ SLIDE 1 ============ */
+        .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
+        .stat-card { background: white; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid rgba(65, 27, 56, 0.08); }
+        .stat-number { font-size: 44px; font-weight: 700; color: #C87C5C; line-height: 1; }
+        .stat-label { font-size: 13px; color: #7A4864; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; flex: 1; }
+        .col h3 { font-size: 20px; font-weight: 700; color: #411B38; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 3px solid #C87C5C; }
+
+        .bar { display: flex; align-items: center; margin-bottom: 12px; }
+        .bar-label { width: 230px; font-size: 15px; color: #411B38; font-weight: 500; }
+        .bar-track { flex: 1; height: 28px; background: white; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(65, 27, 56, 0.08); }
+        .bar-fill { height: 100%; background: linear-gradient(90deg, #C87C5C 0%, #D68D6C 100%); border-radius: 6px; display: flex; align-items: center; padding-left: 10px; color: white; font-size: 13px; font-weight: 700; }
+
+        .task-list { display: flex; flex-direction: column; gap: 10px; }
+        .task { background: white; padding: 11px 16px; border-radius: 8px; font-size: 15px; color: #411B38; border-left: 4px solid #C87C5C; display: flex; align-items: center; gap: 10px; }
+        .task-icon { font-size: 18px; }
+
+        /* ============ SLIDE 2 ============ */
+        .experience-bar { display: flex; height: 100px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(65, 27, 56, 0.08); }
+        .exp-segment { display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; padding: 8px 10px; text-align: center; min-width: 0; }
+        .exp-count { font-size: 30px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+        .exp-label { font-size: 11px; opacity: 0.95; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; line-height: 1.2; }
+
+        .quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; flex: 1; }
+        .quote-box { background: white; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; }
+        .quote-box.hope { border-top: 6px solid #2E5B4F; }
+        .quote-box.worry { border-top: 6px solid #C87C5C; }
+        .quote-heading { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+        .quote-heading.hope { color: #2E5B4F; }
+        .quote-heading.worry { color: #C87C5C; }
+        .quote { font-size: 15px; color: #411B38; line-height: 1.5; margin-bottom: 10px; font-style: italic; padding-left: 16px; position: relative; }
+        .quote:before { content: "\201C"; position: absolute; left: 0; top: -4px; font-size: 24px; color: #C87C5C; font-family: Georgia, serif; line-height: 1; }
+        .quote-attr { font-size: 12px; color: #7A4864; margin-top: 2px; padding-left: 16px; font-style: normal; }
+
+        .takeaway { background: linear-gradient(135deg, #411B38 0%, #5A2E48 100%); color: white; padding: 20px 28px; border-radius: 12px; margin-top: auto; font-size: 17px; line-height: 1.5; }
+        .takeaway strong { color: #D68D6C; }
+
+        /* Print & export guidance */
+        @media print {
+            @page { size: 13.333in 7.5in; margin: 0; }
+            html, body { background: white !important; padding: 0 !important; margin: 0 !important; }
+            .slide {
+                box-shadow: none !important;
+                margin: 0 !important;
+                page-break-after: always;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                width: 13.333in !important;
+                height: 7.5in !important;
+                padding: 0.5in 0.65in !important;
+            }
+            .slide:last-child { page-break-after: avoid; }
+            .slide-label { display: none; }
+            /* Tighter vertical spacing for print so content fits */
+            .slide-title { font-size: 40px !important; margin-bottom: 6px !important; }
+            .slide-subtitle { margin-bottom: 24px !important; }
+            .quote-grid { gap: 18px !important; }
+            .quote-box { padding: 18px 20px !important; }
+            .quote { font-size: 14px !important; margin-bottom: 8px !important; }
+            .takeaway { padding: 16px 22px !important; font-size: 16px !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======================= SLIDE 1 ======================= -->
+    <div class="slide">
+        <div class="slide-label">Slide 1 / 2</div>
+        <h1 class="slide-title">Det här har ni sagt i förenkäten</h1>
+        <p class="slide-subtitle">31 svar från chefer och specialister &middot; april 2025</p>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-number">31</div>
+                <div class="stat-label">Svar</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18</div>
+                <div class="stat-label">Olika roller</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Har aldrig testat AI</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Använder Copilot idag</div>
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <h3>Vad ni vill lära er</h3>
+                <div class="bar">
+                    <div class="bar-label">Automatisering</div>
+                    <div class="bar-track"><div class="bar-fill" style="width: 90%;">24 av 31</div></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Dataanalys &amp; beslutsstöd</div>
+                    <div class="bar-track"><div class="bar-fill" style="width: 85%;">23 av 31</div></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Prediktiv analys</div>
+                    <div class="bar-track"><div class="bar-fill" style="width: 70%;">19 av 31</div></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Språkteknologi</div>
+                    <div class="bar-track"><div class="bar-fill" style="width: 42%;">11 av 31</div></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Bild &amp; video</div>
+                    <div class="bar-track"><div class="bar-fill" style="width: 35%;">9 av 31</div></div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h3>Konkreta uppgifter ni vill ha hjälp med</h3>
+                <div class="task-list">
+                    <div class="task"><span class="task-icon">&#128196;</span> Sammanfatta rapporter, villkor, journaler</div>
+                    <div class="task"><span class="task-icon">&#9993;&#65039;</span> Skriva och formulera mejl &amp; utkast</div>
+                    <div class="task"><span class="task-icon">&#128269;</span> Hitta info i policydokument &amp; styrdokument</div>
+                    <div class="task"><span class="task-icon">&#128202;</span> Analysera data &amp; hitta trender</div>
+                    <div class="task"><span class="task-icon">&#128221;</span> Skapa protokoll, dagordningar, presentationer</div>
+                    <div class="task"><span class="task-icon">&#128172;</span> Lära sig skriva bättre prompter</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= SLIDE 2 ======================= -->
+    <div class="slide">
+        <div class="slide-label">Slide 2 / 2</div>
+        <h1 class="slide-title">Var ni står idag &mdash; och vad ni känner</h1>
+        <p class="slide-subtitle">Erfarenhetsnivå, förväntningar och oro</p>
+
+        <h3 style="font-size: 18px; font-weight: 700; color: #411B38; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">AI-vana i gruppen</h3>
+        <div class="experience-bar">
+            <div class="exp-segment" style="background: #7A4864; flex: 4;">
+                <div class="exp-count">4</div>
+                <div class="exp-label">Aldrig testat</div>
+            </div>
+            <div class="exp-segment" style="background: #C87C5C; flex: 10;">
+                <div class="exp-count">10</div>
+                <div class="exp-label">Provat lite</div>
+            </div>
+            <div class="exp-segment" style="background: #D68D6C; flex: 12;">
+                <div class="exp-count">12</div>
+                <div class="exp-label">Använder regelbundet</div>
+            </div>
+            <div class="exp-segment" style="background: #2E5B4F; flex: 5;">
+                <div class="exp-count">5</div>
+                <div class="exp-label">Avancerade användare</div>
+            </div>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-box hope">
+                <div class="quote-heading hope">&#9889; Vad inspirerar er</div>
+                <div class="quote">Frigöra tid till det som skapar värde<div class="quote-attr">— Håkan, CFO</div></div>
+                <div class="quote">Få bättre flöde i vardagen<div class="quote-attr">— Emma K, Chef förebyggande hälsovård</div></div>
+                <div class="quote">Vi som inte är lika kreativa kan vara det på vårt sätt<div class="quote-attr">— Mattias, E-handelsspecialist</div></div>
+                <div class="quote">Bättre beslutsunderlag och fler signaler från kunddialoger<div class="quote-attr">— Annika, Kundservicechef</div></div>
+            </div>
+
+            <div class="quote-box worry">
+                <div class="quote-heading worry">&#128543; Vad oroar er</div>
+                <div class="quote">Att svaren kan bli fel och att vi litar blint<div class="quote-attr">— flera deltagare</div></div>
+                <div class="quote">Att vi blir för beroende och tappar omdöme<div class="quote-attr">— Anna, Chef direktförsäljning</div></div>
+                <div class="quote">Att jag kan för lite och gör fel<div class="quote-attr">— Johanna, Skadechef</div></div>
+                <div class="quote">Det är en robot som svarar, och svaren kan bli fel<div class="quote-attr">— Cecilia, Personal/löneadmin</div></div>
+            </div>
+        </div>
+
+        <div class="takeaway">
+            <strong>Därför börjar vi enkelt.</strong> Vi bygger förtroende, inte bara färdigheter. Ni behöver inte kunna allt idag — men ni ska gå härifrån med ett konkret verktyg ni kan börja testa imorgon.
+        </div>
+    </div>
+
+</body>
+</html>
