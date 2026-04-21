@@ -108,6 +108,8 @@
             .download-hero { padding: 40px 22px; }
             .download-hero h2 { font-size: 28px; }
             .file-list { grid-template-columns: 1fr; }
+            .prompt-grid { grid-template-columns: 1fr !important; }
+            .prompt-examples { grid-template-columns: 1fr !important; }
             .timeline::before { left: 18px; }
             .timeline-item { padding-left: 52px; }
             .timeline-dot { left: 6px; }
@@ -203,6 +205,139 @@
             </div>
         </div>
 
+        <!-- ==================== KOM IGÅNG ==================== -->
+        <div class="section">
+            <h2 class="section-title">Kom igång med Copilot</h2>
+            <p class="section-subtitle">Första gången? Börja här.</p>
+
+            <div class="steps">
+                <h3>Öppna Copilot för första gången</h3>
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <div class="step-title">Kontrollera att din licens är aktiv</div>
+                        <div class="step-description">Gå till <strong>microsoft365.com</strong> och logga in med ditt Sveland-konto. Om du ser Copilot-ikonen i vänstermenyn är du redo.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <div class="step-title">Öppna Copilot Chat</div>
+                        <div class="step-description">Klicka på <strong>Copilot</strong> i vänstermenyn (microsoft365.com) eller i Teams. Det här är din centrala AI-assistent.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <div class="step-title">Skriv din första fråga</div>
+                        <div class="step-description">Testa något enkelt: <em>"Sammanfatta vad jag har i min kalender den här veckan"</em> eller <em>"Hjälp mig formulera ett kort mejl till mitt team om att jag testar Copilot idag"</em></div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                        <div class="step-title">Testa Copilot i en app</div>
+                        <div class="step-description">Öppna <strong>Outlook</strong>, <strong>Word</strong> eller <strong>Teams</strong> och leta efter Copilot-ikonen i verktygsfältet. Den finns på olika ställen beroende på app.</div>
+                    </div>
+                </div>
+
+                <div class="note-box">
+                    <strong>Saknar du Copilot-ikonen?</strong> Kontrollera med IT att din licens är aktiverad. Det kan ta upp till 24 timmar efter aktivering innan Copilot syns i alla appar.
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PROMPT-TIPS ==================== -->
+        <div class="section">
+            <h2 class="section-title">Skriv bättre prompter</h2>
+            <p class="section-subtitle">Fem byggstenar som gör skillnad</p>
+
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div class="prompt-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); text-align: center;">
+                    <div style="background: #411B38; color: white; padding: 28px 16px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">&#127919;</div>
+                        <div style="font-size: 18px; font-weight: 700;">Tydlighet</div>
+                        <div style="font-size: 13px; margin-top: 8px; color: #FFE8E0; line-height: 1.4;">Vad vill du att Copilot ska göra?</div>
+                    </div>
+                    <div style="background: #5A2E48; color: white; padding: 28px 16px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">&#128218;</div>
+                        <div style="font-size: 18px; font-weight: 700;">Kontext</div>
+                        <div style="font-size: 13px; margin-top: 8px; color: #FFE8E0; line-height: 1.4;">Vilken bakgrund behöver den?</div>
+                    </div>
+                    <div style="background: #7A4864; color: white; padding: 28px 16px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">&#127793;</div>
+                        <div style="font-size: 18px; font-weight: 700;">Syfte</div>
+                        <div style="font-size: 13px; margin-top: 8px; color: #FFE8E0; line-height: 1.4;">Varför behöver du det här?</div>
+                    </div>
+                    <div style="background: #C87C5C; color: white; padding: 28px 16px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">&#128101;</div>
+                        <div style="font-size: 18px; font-weight: 700;">Målgrupp</div>
+                        <div style="font-size: 13px; margin-top: 8px; color: #FFE8E0; line-height: 1.4;">Vem ska läsa eller använda det?</div>
+                    </div>
+                    <div style="background: #D68D6C; color: white; padding: 28px 16px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">&#128203;</div>
+                        <div style="font-size: 18px; font-weight: 700;">Format</div>
+                        <div style="font-size: 13px; margin-top: 8px; color: #FFE8E0; line-height: 1.4;">Hur ska svaret se ut?</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prompt-examples" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+                <div class="card">
+                    <h3 style="color: #C87C5C; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">&#10060; Svag prompt</h3>
+                    <p style="font-size: 17px; color: #411B38; line-height: 1.6;"><em>"Sammanfatta det här dokumentet"</em></p>
+                </div>
+                <div class="card">
+                    <h3 style="color: #2E5B4F; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">&#9989; Stark prompt</h3>
+                    <p style="font-size: 17px; color: #411B38; line-height: 1.6;"><em>"Sammanfatta den bifogade skadehanteringspolicyn i max 5 punkter. Fokusera på handläggningstider och behörighetsnivåer. Jag ska använda sammanfattningen som underlag i ett ledningsmöte. Skriv i punktform."</em></p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 24px;">
+                <h3>Fler exempel anpassade för Sveland</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 12px;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid #C87C5C; text-align: left;">
+                                <th style="padding: 12px 8px; color: #411B38;">Byggsten</th>
+                                <th style="padding: 12px 8px; color: #411B38;">Vad du skriver</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #FFF6F0;">
+                                <td style="padding: 12px 8px; font-weight: 600; color: #411B38; white-space: nowrap;">&#127919; Tydlighet</td>
+                                <td style="padding: 12px 8px; color: #7A4864;"><em>"Skriv ett svar till en djurägare vars ersättningsanspråk har avslagits"</em></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #FFF6F0;">
+                                <td style="padding: 12px 8px; font-weight: 600; color: #411B38; white-space: nowrap;">&#128218; Kontext</td>
+                                <td style="padding: 12px 8px; color: #7A4864;"><em>"Avslaget gäller tandvård på katt som inte ingår i försäkring Bas. Kunden har varit hos oss i 4 år."</em></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #FFF6F0;">
+                                <td style="padding: 12px 8px; font-weight: 600; color: #411B38; white-space: nowrap;">&#127793; Syfte</td>
+                                <td style="padding: 12px 8px; color: #7A4864;"><em>"Syftet är att förklara beslutet tydligt och behålla kunden."</em></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #FFF6F0;">
+                                <td style="padding: 12px 8px; font-weight: 600; color: #411B38; white-space: nowrap;">&#128101; Målgrupp</td>
+                                <td style="padding: 12px 8px; color: #7A4864;"><em>"Mottagaren är en privatperson utan försäkringskunskap."</em></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 8px; font-weight: 600; color: #411B38; white-space: nowrap;">&#128203; Format</td>
+                                <td style="padding: 12px 8px; color: #7A4864;"><em>"Skriv som ett mejl, max 150 ord, med en varm men professionell ton. Avsluta med information om omprövning."</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <strong>Du behöver inte alltid alla fem.</strong> För en enkel fråga räcker Tydlighet. Men ju mer komplex uppgiften är, desto fler byggstenar behöver du. Testa att lägga till en i taget och se hur svaret förbättras.
+            </div>
+        </div>
+
         <!-- ==================== ÖVNINGAR ==================== -->
         <div class="section">
             <h2 class="section-title">Övningar</h2>
@@ -216,6 +351,10 @@
 
             <!-- ===== TILLFÄLLE 1 ===== -->
             <div id="t1-tab" class="tab-content active">
+
+                <div class="note-box warning" style="margin-bottom: 32px;">
+                    <strong>&#9888;&#65039; Viktig princip genom hela kursen:</strong> Copilot kan ge fel svar. Det gäller siffror, villkorstolkningar, juridik och medicinsk information. Du har <em>alltid</em> eget ansvar för det du skickar, beslutar eller publicerar. Använd Copilot som ett utkast — inte som ett facit.
+                </div>
 
                 <!-- 1. VÄLJ LÄGE -->
                 <div class="exercise">
@@ -317,6 +456,21 @@
                     <div class="note-box warning">
                         <strong>Poängen:</strong> Copilot kan ge snabba svar om komplexa villkor — men du har <em>alltid</em> ansvar för att svaret stämmer. Testa medvetet en fråga där svaret är otydligt i villkoren.
                     </div>
+                </div>
+
+                <!-- 7. PROTOKOLL OCH MÖTESANTECKNINGAR -->
+                <div class="exercise">
+                    <div class="exercise-header">
+                        <span class="exercise-number">7</span>
+                        <span class="exercise-title">Skriva protokoll och mötesanteckningar</span>
+                    </div>
+                    <p class="exercise-intro">Många av er lägger mycket tid på att skriva protokoll, dagordningar och sammanställningar. Copilot kan göra det snabbare.</p>
+                    <ol>
+                        <li>Öppna ett tomt Word-dokument och Copilot-panelen.</li>
+                        <li>Skriv: <em>"Skapa en dagordning för ett ledningsmöte om AI-införande på Sveland. Mötet är 60 minuter. Inkludera punkter om nuläge, piloterfarenheter, risker och nästa steg. Skriv i tabellformat med tid, punkt och ansvarig."</em></li>
+                        <li><strong>Från mötesanteckningar till protokoll:</strong> Kopiera in texten från demofilen "Mötesanteckningar" i ett Word-dokument. Be Copilot: <em>"Omvandla dessa mötesanteckningar till ett formellt protokoll med beslutspunkter, ansvariga och deadlines i tabellformat."</em></li>
+                        <li>Diskutera: Hur mycket tid sparade du? Vad behövde justeras?</li>
+                    </ol>
                 </div>
 
                 <div class="homework">
