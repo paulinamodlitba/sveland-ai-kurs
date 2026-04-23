@@ -301,6 +301,58 @@
                 </div>
             </div>
 
+            <!-- FÖRE/EFTER-JÄMFÖRELSE -->
+            <div class="prompt-examples" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px;">
+                <div class="card" style="border-top: 6px solid #C87C5C;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+                        <span style="font-size: 22px;">&#10060;</span>
+                        <h3 style="color: #C87C5C; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin: 0;">Svag prompt</h3>
+                    </div>
+                    <p style="font-size: 18px; color: #411B38; line-height: 1.6; font-style: italic; padding: 16px; background: #FFF6F0; border-radius: 8px;">"Skriv ett svar till kunden som fått avslag"</p>
+                    <p style="font-size: 14px; color: #7A4864; margin-top: 16px; line-height: 1.5;">Copilot vet inte: vilken kund, vilket avslag, vilken ton, hur långt, eller vad du vill uppnå. Resultatet blir generiskt och måste göras om.</p>
+                </div>
+                <div class="card" style="border-top: 6px solid #2E5B4F;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+                        <span style="font-size: 22px;">&#9989;</span>
+                        <h3 style="color: #2E5B4F; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin: 0;">Stark prompt &mdash; följer modellen</h3>
+                    </div>
+                    <p style="font-size: 16px; color: #411B38; line-height: 1.7; padding: 16px; background: #FFF6F0; border-radius: 8px;">
+                        <span style="background: #411B38; color: white; padding: 2px 8px; border-radius: 4px;">Skriv ett svar till en djurägare vars ersättningsanspråk fått delvis avslag.</span>
+                        <span style="background: #5A2E48; color: white; padding: 2px 8px; border-radius: 4px;">Hunden har opererats för korsbandsskada (42 000 kr) men försäkring Bas ersätter bara upp till 25 000 kr. Kunden har varit hos oss i 6 år utan tidigare skadeanmälningar och är mycket upprörd.</span>
+                        <span style="background: #7A4864; color: white; padding: 2px 8px; border-radius: 4px;">Syftet är att förklara beslutet tydligt och behålla kunden som lojal.</span>
+                        <span style="background: #C87C5C; color: white; padding: 2px 8px; border-radius: 4px;">Mottagaren är en privatperson utan försäkringskunskap.</span>
+                        <span style="background: #D68D6C; color: white; padding: 2px 8px; border-radius: 4px;">Skriv som ett mejl, max 200 ord, varm men professionell ton. Avsluta med information om rätten till omprövning.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- FÄRGFÖRKLARING -->
+            <div class="card" style="margin-top: 24px;">
+                <h3 style="margin-bottom: 16px;">Så är den starka prompten byggd</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <div style="display: flex; align-items: start; gap: 10px;">
+                        <div style="width: 14px; height: 14px; background: #411B38; border-radius: 3px; flex-shrink: 0; margin-top: 5px;"></div>
+                        <div><strong style="color: #411B38; font-size: 15px;">Tydlighet</strong><br><span style="color: #7A4864; font-size: 14px;">Vad ska Copilot göra</span></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 10px;">
+                        <div style="width: 14px; height: 14px; background: #5A2E48; border-radius: 3px; flex-shrink: 0; margin-top: 5px;"></div>
+                        <div><strong style="color: #411B38; font-size: 15px;">Kontext</strong><br><span style="color: #7A4864; font-size: 14px;">Bakgrund som behövs</span></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 10px;">
+                        <div style="width: 14px; height: 14px; background: #7A4864; border-radius: 3px; flex-shrink: 0; margin-top: 5px;"></div>
+                        <div><strong style="color: #411B38; font-size: 15px;">Syfte</strong><br><span style="color: #7A4864; font-size: 14px;">Varför du behöver det</span></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 10px;">
+                        <div style="width: 14px; height: 14px; background: #C87C5C; border-radius: 3px; flex-shrink: 0; margin-top: 5px;"></div>
+                        <div><strong style="color: #411B38; font-size: 15px;">Målgrupp</strong><br><span style="color: #7A4864; font-size: 14px;">Vem ska läsa det</span></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 10px; grid-column: 1 / -1;">
+                        <div style="width: 14px; height: 14px; background: #D68D6C; border-radius: 3px; flex-shrink: 0; margin-top: 5px;"></div>
+                        <div><strong style="color: #411B38; font-size: 15px;">Format</strong><br><span style="color: #7A4864; font-size: 14px;">Hur svaret ska se ut</span></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="note-box">
                 <strong>Grund för övningarna i tillfälle 1:</strong> Börja med <em>Tydlighet + Kontext</em> &mdash; det räcker långt. I tillfälle 3 går vi djupare med avancerade tekniker som role prompting, few-shot och chain-of-thought.
             </div>
