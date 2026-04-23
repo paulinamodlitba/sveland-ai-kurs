@@ -409,7 +409,7 @@
             </div>
 
             <div class="note-box">
-                <strong>Grund för övningarna i tillfälle 1:</strong> Börja med <em>Tydlighet + Kontext</em>: det räcker långt. I tillfälle 3 går vi djupare med avancerade tekniker som role prompting, few-shot och chain-of-thought.
+                <strong>Grund för övningarna i tillfälle 1:</strong> Börja med <em>Tydlighet + Kontext</em>: det räcker långt. I tillfälle 3 går vi djupare med avancerade tekniker för att ge Copilot en roll, visa med exempel och tänka steg för steg.
             </div>
         </div>
 
@@ -757,22 +757,22 @@
                     <h4 style="font-size: 18px; color: #411B38; margin-top: 20px; margin-bottom: 12px;">Fyra tekniker att ta med sig</h4>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px;">
-                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">1. Role prompting</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">1. Ge en roll</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin-bottom: 8px;">Ge Copilot en roll innan uppgiften.</p>
                             <p style="font-size: 13px; color: #7A4864; line-height: 1.5;"><em>"Agera som erfaren försäkringsrådgivare med 15 års erfarenhet. Granska detta kundsvar och föreslå förbättringar."</em></p>
                         </div>
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px;">
-                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">2. Few-shot</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">2. Visa med exempel</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin-bottom: 8px;">Ge exempel innan uppgiften.</p>
                             <p style="font-size: 13px; color: #7A4864; line-height: 1.5;"><em>"Här är två mejl jag har skrivit tidigare [...]. Skriv nu i samma stil ett svar om ett avslag på tandvård."</em></p>
                         </div>
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px;">
-                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">3. Chain-of-thought</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">3. Tänk steg för steg</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin-bottom: 8px;">Be den resonera steg för steg.</p>
                             <p style="font-size: 13px; color: #7A4864; line-height: 1.5;"><em>"Resonera dig fram steg för steg. Först: vad säger villkoren? Sen: hur tolkar vi fallet? Sist: vilket beslut följer?"</em></p>
                         </div>
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px;">
-                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">4. Iterative prompting</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">4. Fråga dig fram</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin-bottom: 8px;">Be Copilot ställa motfrågor.</p>
                             <p style="font-size: 13px; color: #7A4864; line-height: 1.5;"><em>"Jag ska göra X. Ställ mig 3 motfrågor som hjälper dig ge ett bättre svar innan du börjar."</em></p>
                         </div>
@@ -818,7 +818,7 @@
                     </div>
 
                     <div class="note-box" style="margin-top: 24px;">
-                        <strong>Tänk på:</strong> Använd prompt-teknikerna från förra övningen. Role prompting funkar för alla tre spåren.
+                        <strong>Tänk på:</strong> Använd prompt-teknikerna från förra övningen. Att ge Copilot en roll funkar för alla tre spåren.
                     </div>
                 </div>
 
@@ -848,7 +848,7 @@
                     <p style="font-size: 15px; color: #7A4864; margin-bottom: 20px;"><strong>Format:</strong> Tyst arbete &middot; 25 min</p>
 
                     <ol>
-                        <li><strong>Starta med role + iterative prompting:</strong><br>
+                        <li><strong>Starta med roll och motfrågor:</strong><br>
                             <div class="code-block">Agera som en AI-coach för mig. Jag har gått en 3-halvdagars AI-kurs och ska nu skriva en 30-dagarsplan för hur jag ska fortsätta använda AI i min roll som [din titel] på Sveland Djurförsäkring. Innan du hjälper mig: ställ mig 3 motfrågor som du behöver svar på för att kunna coacha mig bra.</div>
                         </li>
                         <li><strong>Svara på motfrågorna</strong> ärligt. Copilot vet nu din kontext.</li>
