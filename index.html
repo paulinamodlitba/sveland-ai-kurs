@@ -219,6 +219,56 @@
                 <p>Ladda ner filerna en och en ovan, eller hämta alla som ZIP</p>
                 <a href="demomaterial/sveland-ai-ovningsmaterial.zip" download class="btn-primary">Ladda ner alla filer (ZIP)</a>
             </div>
+
+            <!-- FÖRBEREDELSE: LADDA UPP TILL ONEDRIVE -->
+            <div class="steps" style="margin-top: 40px;">
+                <h3>Förberedelse innan tillfälle 1 &mdash; ladda upp filerna till OneDrive</h3>
+                <p style="font-size: 16px; color: #7A4864; line-height: 1.6; margin-bottom: 28px;">För att Copilot ska kunna <em>hitta</em> demofilerna när du söker (t.ex. prompten <em>"Hitta vår skadehanteringspolicy"</em>) måste de först ligga i din OneDrive eller i en SharePoint-mapp. Gör detta före kursen &mdash; det tar 5 minuter.</p>
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <div class="step-title">Öppna OneDrive</div>
+                        <div class="step-description">Gå till <a href="https://onedrive.live.com">onedrive.live.com</a> och logga in med ditt Sveland-konto. Alternativt &mdash; öppna OneDrive-appen i Utforskaren/Finder om du har den synkad.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <div class="step-title">Skapa en tydligt namngiven mapp</div>
+                        <div class="step-description">Klicka på <strong>Ny</strong> &rarr; <strong>Mapp</strong>. Namnge mappen <code>DEMO &mdash; AI-kurs Sveland</code>. Tydlig markering är viktig eftersom filerna är fiktiva &mdash; annars kan Copilot blanda in dem i svar om riktiga policyfrågor framåt.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <div class="step-title">Ladda upp demofilerna</div>
+                        <div class="step-description">Öppna mappen och dra in alla fem demofiler (eller ladda upp ZIP:en och packa upp). Vänta tills ikonen visar att de är synkade till molnet.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                        <div class="step-title">Vänta några minuter (viktigt!)</div>
+                        <div class="step-description">Copilot indexerar nya filer automatiskt men det kan ta upp till 15&ndash;30 minuter innan de är sökbara. Ladda gärna upp dagen innan tillfälle 1 &mdash; då är de garanterat indexerade när vi kör.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <div class="step-content">
+                        <div class="step-title">Testa att sökningen fungerar</div>
+                        <div class="step-description">Öppna Copilot Chat och skriv: <em>"Hitta mina dokument i mappen DEMO &mdash; AI-kurs Sveland"</em> eller direkt: <em>"Hitta skadehanteringspolicyn"</em>. Får du träff? Bra &mdash; då är du redo.</div>
+                    </div>
+                </div>
+
+                <div class="note-box warning">
+                    <strong>&#9888;&#65039; Alternativ om det strular:</strong> Om du inte hinner eller om Copilot inte indexerar i tid &mdash; du kan alltid dra och släppa filen direkt i Copilot Chat under övningen. Det fungerar lika bra för att <em>analysera</em> en fil, men testar inte Copilots förmåga att <em>söka i dina dokument</em>.
+                </div>
+            </div>
         </div>
 
         <!-- ==================== KOM IGÅNG ==================== -->
@@ -451,9 +501,14 @@
                         <span class="exercise-title">SharePoint-sökning + filanalys</span>
                     </div>
                     <p class="exercise-intro">Copilot kan söka i era dokument och analysera bifogade filer. Testa båda sätten.</p>
+
+                    <div class="note-box warning" style="margin-bottom: 20px;">
+                        <strong>Förutsättning:</strong> För steg 1 måste du ha laddat upp demofilerna till OneDrive i förväg (se <em>"Förberedelse innan tillfälle 1"</em>-sektionen ovan). Om du inte hann &mdash; hoppa direkt till steg 2 som fungerar oavsett.
+                    </div>
+
                     <ol>
-                        <li><strong>Söka i SharePoint:</strong> Öppna Copilot Chat och skriv: <em>"Hitta vår skadehanteringspolicy"</em> eller <em>"Vad säger riktlinjerna om handläggningstider för komplexa sjukdomsärenden?"</em></li>
-                        <li><strong>Analysera bifogad fil:</strong> Klicka på 📎 och bifoga demofilen "Skadehanteringspolicy". Skriv: <em>"Analysera det bifogade dokumentet och ge mig en sammanfattning av de viktigaste punkterna"</em></li>
+                        <li><strong>Söka i OneDrive/SharePoint:</strong> Öppna Copilot Chat och skriv: <em>"Hitta vår skadehanteringspolicy"</em> eller <em>"Vad säger riktlinjerna om handläggningstider för komplexa sjukdomsärenden?"</em></li>
+                        <li><strong>Analysera bifogad fil:</strong> Klicka på 📎 och bifoga demofilen "Skadehanteringspolicy" direkt i chatten. Skriv: <em>"Analysera det bifogade dokumentet och ge mig en sammanfattning av de viktigaste punkterna"</em></li>
                         <li>Ställ följdfrågor: <em>"Vem har behörighet att besluta om ärenden över 30 000 kr?"</em> eller <em>"Hur ska vi hantera djurägare som hotar med ARN?"</em></li>
                         <li>Jämför: Hur lång tid tog det jämfört med att söka manuellt? Hittade den rätt?</li>
                     </ol>
