@@ -120,21 +120,23 @@ IT-drift
 
 ---
 
-MEJL 7 — Från: Åsa Johansson (SALT, uppdragsgivare)
-Ämne: AI-utbildningen — praktisk detalj
+MEJL 7 — Från: Ursula Lige Berglund (utbildningsansvarig, Sveland)
+Ämne: Statusuppdatering inför AI-kursen
 ---
 
-Hej Paulina och Maria,
+Hej Paulina,
 
-Bara en snabb check inför utbildningen nästa vecka:
+Snabb avstämning inför nästa vecka så du har koll på läget från vår sida:
 
-1. Har alla deltagare fått Copilot-licenser aktiverade? Ursula sa att det var 2 personer kvar förra veckan.
-2. Boken "Vad fan ska vi med AI till?" — har den kommit fram till kontoret?
-3. Kan vi få deltagarnas namn och roller senast onsdag? Behöver för certifikaten.
+1. Licenser: Alla 31 deltagare har nu Copilot-licens aktiverad (de två sista fixades i fredags, så vi är i mål).
+2. Boken "Vad fan ska vi med AI till?" har kommit fram till kontoret och delas ut imorgon. Tack!
+3. Förenkäten har stängt: 31 av 31 har svarat. Snyggt.
+4. Lärparindelningen — Åsa och jag har skissat ett förslag som vi skickar för granskning på måndag. Säg till om du vill ha andra principer än mix av roller och AI-vana.
 
-Ser fram emot att köra igång!
+Är det något du behöver från oss innan tisdag morgon?
 
-/Åsa
+Hälsningar,
+Ursula
 
 ---
 
