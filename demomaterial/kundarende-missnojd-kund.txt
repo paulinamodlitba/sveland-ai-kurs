@@ -1,14 +1,17 @@
-KUNDÄRENDE — ÖVNINGSSCENARIO FÖR COPILOT
+KUNDÄRENDE — DEMOMATERIAL FÖR KURSLEDAREN
 ===================================================================
 
-BAKGRUND
-Du är skadehandläggare på Sveland Djurförsäkring. Du har fått nedanstående
-mail från en djurägare som är missnöjd med ett ersättningsbeslut. Din uppgift
-är att skriva ett professionellt, empatiskt och korrekt svar.
+Den här filen används som underlag för demon i Övning 3 Del B
+(Outlook + Copilot Reply). Två delar:
+
+  1. INKOMMANDE MAIL — skickas till din egen inbox så det dyker
+     upp tillsammans med övriga demomail när du gör inkorgsöversikten.
+  2. RELEVANTA FAKTA — klistras in i Copilot som "andra prompt"
+     för att demonstrera prompt-modellens kontextkraft.
 
 ===================================================================
 
-INKOMMANDE MAIL FRÅN KUND
+INKOMMANDE MAIL FRÅN KUND (skicka till dig själv)
 -------------------------------------------------------------------
 
 Från: Karin Andersson <karin.andersson@email.se>
@@ -24,7 +27,7 @@ beslut att bara ersätta 18 500 kr av veterinärkostnaden för min hund Bella
 
 Bella fick en korsbandsskada i mars och behövde opereras akut. Vår ordinarie
 veterinär hänvisade oss till Regiondjursjukhuset eftersom de är specialiserade
-på ortopedi. Vi hade inget val — Bella hade ont och kunde knappt gå.
+på ortopedi. Vi hade inget val, Bella hade ont och kunde knappt gå.
 
 Jag har betalat försäkringspremien i 6 år utan att göra ett enda anspråk.
 Och nu när jag faktiskt behöver försäkringen får jag knappt halva beloppet?
@@ -50,30 +53,26 @@ Försäkringsnr: SVE-2019-HU-44821
 
 ===================================================================
 
-RELEVANTA FAKTA (för att kunna skriva svar)
+RELEVANTA FAKTA (klistras in som kontext i andra prompten)
 -------------------------------------------------------------------
 
 - Karin har försäkringen "Hundförsäkring Bas" med maxersättning 25 000 kr
   per skadefall för veterinärvård.
-- Självrisk: 2 500 kr + 20% av resterande kostnad.
-- Beräkning: 42 000 - 2 500 (självrisk) = 39 500. 39 500 × 0,80 = 31 600.
-  Tak: 25 000 kr. Alltså ersätts 25 000 - 2 500 - 4 000 (20% av 20 000)
-  = 18 500 kr (korrekt utbetalt enligt villkoren, men beräkningen
-  kan behöva förklaras tydligare).
+- Självrisk: 2 500 kr fast + 20% av resterande kostnad.
+- Beräkning enligt utbetalt belopp:
+    Veterinärkostnad:           42 000 kr
+    Fast självrisk:             -2 500 kr
+    Rörlig självrisk (20%):     -7 900 kr
+    Summa efter självrisk:      31 600 kr
+    Maxbelopp Bas (tak):        25 000 kr
+    Utbetalt:                   18 500 kr
 
-  Förenklad förklaring:
-  Veterinärkostnad: 42 000 kr
-  Självrisk fast del: -2 500 kr
-  Rörlig självrisk (20%): -7 900 kr
-  Summa efter självrisk: 31 600 kr
-  Maxbelopp Bas: 25 000 kr
-  Utbetalt: 18 500 kr (31 600 begränsas av tak minus rörlig del)
-
-  OBS: Siffran 18 500 kr beror på att taket 25 000 kr gäller INKLUSIVE
-  den rörliga självrisken, dvs. max utbetalning = 25 000 - (25 000 × 0,20)
-  - 2 500 = 17 500 kr... Det finns alltså en viss otydlighet i beräkningen
-  som kan diskuteras. Poängen med övningen är att AI kan hjälpa till att
-  formulera ett tydligt svar — men INTE att verifiera beräkningar.
+- OBS, pedagogiskt: Om man tolkar taket 25 000 kr som "max utbetalning
+  inklusive den rörliga självrisken" blir resultatet i stället
+  25 000 - 5 000 (rörlig 20% av tak) - 2 500 (fast självrisk) = 17 500 kr.
+  Beräkningen har en otydlighet som ofta förekommer i verkligheten.
+  Använd det medvetet i demon för att be Copilot dubbelkolla matematiken
+  och se om den fångar nyansen eller blint accepterar den första siffran.
 
 - Karin har rätt att begära omprövning inom 30 dagar.
 - Med "Hundförsäkring Plus" hade maxbeloppet varit 50 000 kr.
@@ -81,17 +80,28 @@ RELEVANTA FAKTA (för att kunna skriva svar)
 
 ===================================================================
 
-ÖVNINGSINSTRUKTION
+KURSLEDARENS DEMO-FLÖDE (förslag)
 -------------------------------------------------------------------
 
-1. Klistra in kundens mail i Copilot (eller i en ny chatt).
-2. Be Copilot: "Hjälp mig skriva ett professionellt och empatiskt svar
-   till denna missnöjda kund. Förklara beslutet tydligt men visa att vi
-   förstår hennes frustration."
-3. Justera tonen: be om "varmare", "kortare" eller "mer formellt" och
-   jämför resultaten.
-4. Diskutera i lärparet:
-   - Vad förbättrades med Copilot-stöd?
-   - Vad behövde du ändra?
-   - Vad får du ALDRIG skicka utan att läsa igenom och verifiera?
-   - Hur hanterade Copilot beräkningen — stämde den?
+Steg 1, först prompt utan kontext:
+  Öppna Karins mejl i din inbox. Klicka Svara → Copilot-ikonen.
+  Be: "Skriv ett professionellt och empatiskt svar till denna kund."
+  Notera: svaret blir generiskt eftersom Copilot inte vet
+  försäkringstyp, beräkning eller kundhistoria.
+
+Steg 2, andra prompt med kontext:
+  Klistra in RELEVANTA FAKTA-blocket ovan i Copilot Chat.
+  Be: "Skriv om svaret med dessa fakta som underlag. Använd Sveland-
+  rösten (varm, klar, bemötande) och inkludera information om rätten
+  till omprövning."
+  Notera: svaret blir specifikt, faktabaserat och mycket bättre.
+
+Steg 3, faktagranskning:
+  Be Copilot: "Dubbelkolla matematiken i utkastet. Stämmer 18 500 kr?"
+  Notera: Copilot kan acceptera siffran utan att fånga otydligheten
+  i hur taket tolkas. Använd det som lärtillfälle om varför fakta-
+  granskning aldrig kan delegeras helt till AI.
+
+Pedagogisk poäng: deltagarna ser hur prompt-modellens "Kontext"
+förvandlar ett mediokert svar till ett användbart, och hur fakta-
+granskning fortfarande är handläggarens ansvar.
