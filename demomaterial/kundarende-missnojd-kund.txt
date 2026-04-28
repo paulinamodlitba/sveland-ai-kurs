@@ -1,17 +1,17 @@
-KUNDÄRENDE — DEMOMATERIAL FÖR KURSLEDAREN
+KUNDÄRENDE — KARIN ANDERSSON, ÄRENDE 2025-4387
 ===================================================================
 
-Den här filen används som underlag för demon i Övning 3 Del B
-(Outlook + Copilot Reply). Två delar:
+Det här fiktiva ärendet används i Övning 3 (Outlook + Copilot Reply).
+Filen innehåller två delar:
 
-  1. INKOMMANDE MAIL — skickas till din egen inbox så det dyker
-     upp tillsammans med övriga demomail när du gör inkorgsöversikten.
-  2. RELEVANTA FAKTA — klistras in i Copilot som "andra prompt"
-     för att demonstrera prompt-modellens kontextkraft.
+  1. INKOMMANDE MAIL från Karin Andersson
+  2. RELEVANTA FAKTA om ärendet (försäkringstyp, beräkning, kundhistoria)
+
+Använd båda delarna när du arbetar med Copilot under övningen.
 
 ===================================================================
 
-INKOMMANDE MAIL FRÅN KUND (skicka till dig själv)
+INKOMMANDE MAIL FRÅN KUND
 -------------------------------------------------------------------
 
 Från: Karin Andersson <karin.andersson@email.se>
@@ -53,12 +53,15 @@ Försäkringsnr: SVE-2019-HU-44821
 
 ===================================================================
 
-RELEVANTA FAKTA (klistras in som kontext i andra prompten)
+RELEVANTA FAKTA OM ÄRENDET
 -------------------------------------------------------------------
+
+Försäkring och beräkning
 
 - Karin har försäkringen "Hundförsäkring Bas" med maxersättning 25 000 kr
   per skadefall för veterinärvård.
 - Självrisk: 2 500 kr fast + 20% av resterande kostnad.
+
 - Beräkning enligt utbetalt belopp:
     Veterinärkostnad:           42 000 kr
     Fast självrisk:             -2 500 kr
@@ -67,41 +70,14 @@ RELEVANTA FAKTA (klistras in som kontext i andra prompten)
     Maxbelopp Bas (tak):        25 000 kr
     Utbetalt:                   18 500 kr
 
-- OBS, pedagogiskt: Om man tolkar taket 25 000 kr som "max utbetalning
-  inklusive den rörliga självrisken" blir resultatet i stället
-  25 000 - 5 000 (rörlig 20% av tak) - 2 500 (fast självrisk) = 17 500 kr.
-  Beräkningen har en otydlighet som ofta förekommer i verkligheten.
-  Använd det medvetet i demon för att be Copilot dubbelkolla matematiken
-  och se om den fångar nyansen eller blint accepterar den första siffran.
+Kundhistoria
+
+- Karin har varit kund sedan 2019.
+- Inga tidigare skadeanmälningar.
+- Med "Hundförsäkring Plus" hade maxbeloppet varit 50 000 kr.
+
+Rättigheter
 
 - Karin har rätt att begära omprövning inom 30 dagar.
-- Med "Hundförsäkring Plus" hade maxbeloppet varit 50 000 kr.
-- Karin har varit kund sedan 2019 utan tidigare skadeanmälningar.
-
-===================================================================
-
-KURSLEDARENS DEMO-FLÖDE (förslag)
--------------------------------------------------------------------
-
-Steg 1, först prompt utan kontext:
-  Öppna Karins mejl i din inbox. Klicka Svara → Copilot-ikonen.
-  Be: "Skriv ett professionellt och empatiskt svar till denna kund."
-  Notera: svaret blir generiskt eftersom Copilot inte vet
-  försäkringstyp, beräkning eller kundhistoria.
-
-Steg 2, andra prompt med kontext:
-  Klistra in RELEVANTA FAKTA-blocket ovan i Copilot Chat.
-  Be: "Skriv om svaret med dessa fakta som underlag. Använd Sveland-
-  rösten (varm, klar, bemötande) och inkludera information om rätten
-  till omprövning."
-  Notera: svaret blir specifikt, faktabaserat och mycket bättre.
-
-Steg 3, faktagranskning:
-  Be Copilot: "Dubbelkolla matematiken i utkastet. Stämmer 18 500 kr?"
-  Notera: Copilot kan acceptera siffran utan att fånga otydligheten
-  i hur taket tolkas. Använd det som lärtillfälle om varför fakta-
-  granskning aldrig kan delegeras helt till AI.
-
-Pedagogisk poäng: deltagarna ser hur prompt-modellens "Kontext"
-förvandlar ett mediokert svar till ett användbart, och hur fakta-
-granskning fortfarande är handläggarens ansvar.
+- Vid fortsatt missnöje kan hon vända sig till ARN, Konsumenternas
+  Försäkringsbyrå, eller allmän domstol (se villkor avsnitt 11).
