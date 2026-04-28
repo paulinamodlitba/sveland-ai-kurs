@@ -58,9 +58,9 @@
         /* Steps */
         .steps { background: white; border-radius: 18px; padding: 48px; box-shadow: 0 4px 20px rgba(65, 27, 56, 0.08); border: 1px solid rgba(65, 27, 56, 0.06); }
         .steps h3 { font-size: 28px; font-weight: 600; margin-bottom: 32px; color: #411B38; }
-        .step { margin-bottom: 32px; }
-        .step-number { display: inline-block; width: 36px; height: 36px; background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%); color: white; border-radius: 50%; text-align: center; line-height: 36px; font-weight: 600; font-size: 16px; margin-right: 16px; }
-        .step-content { display: inline-block; vertical-align: top; width: calc(100% - 56px); }
+        .step { margin-bottom: 32px; display: flex; align-items: flex-start; gap: 24px; }
+        .step-number { flex-shrink: 0; width: 36px; height: 36px; background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%); color: white; border-radius: 50%; text-align: center; line-height: 36px; font-weight: 600; font-size: 16px; }
+        .step-content { flex: 1; min-width: 0; }
         .step-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #411B38; }
         .step-description { font-size: 17px; line-height: 1.6; color: #7A4864; }
 
