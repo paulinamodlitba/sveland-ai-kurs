@@ -27,6 +27,8 @@
         .card ul { list-style: none; padding: 0; }
         .card li { font-size: 17px; line-height: 1.6; padding: 12px 0; color: #411B38; padding-left: 24px; position: relative; }
         .card li:before { content: "\2022"; font-size: 20px; color: #C87C5C; font-weight: 600; position: absolute; left: 0; top: 12px; }
+        .card ul.no-bullet li { padding-left: 0; }
+        .card ul.no-bullet li:before { content: none; }
 
         /* Timeline */
         .timeline { position: relative; padding: 20px 0; }
@@ -668,7 +670,7 @@
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                         <div>
                             <div style="font-size: 14px; font-weight: 700; color: #D68D6C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Innan du promptar</div>
-                            <ul style="list-style: none; padding: 0;">
+                            <ul class="no-bullet" style="list-style: none; padding: 0;">
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Vad vill jag faktiskt få ut?</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Vilken kontext behöver Copilot?</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Innehåller min prompt känsliga uppgifter?</li>
@@ -676,7 +678,7 @@
                         </div>
                         <div>
                             <div style="font-size: 14px; font-weight: 700; color: #D68D6C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Efter du fått svar</div>
-                            <ul style="list-style: none; padding: 0;">
+                            <ul class="no-bullet" style="list-style: none; padding: 0;">
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Granska mot källan: stämmer det?</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Skulle jag signera det här?</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Är svaret för generiskt: behöver jag bättre prompt?</li>
@@ -684,7 +686,7 @@
                         </div>
                         <div>
                             <div style="font-size: 14px; font-weight: 700; color: #D68D6C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">I vardagen</div>
-                            <ul style="list-style: none; padding: 0;">
+                            <ul class="no-bullet" style="list-style: none; padding: 0;">
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Dokumentera prompter som funkar</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Dela lärdomar med ditt team</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Informera när du transkriberar kundmöten</li>
@@ -692,7 +694,7 @@
                         </div>
                         <div>
                             <div style="font-size: 14px; font-weight: 700; color: #D68D6C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Aldrig</div>
-                            <ul style="list-style: none; padding: 0;">
+                            <ul class="no-bullet" style="list-style: none; padding: 0;">
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Personnummer, löner, medicinska uppgifter i externa AI-verktyg</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Skicka utkast utan att ha läst igenom</li>
                                 <li style="padding: 6px 0; color: #FFE8E0; font-size: 15px;">&rarr; Lita blint på siffror, citat eller villkorstolkningar</li>
