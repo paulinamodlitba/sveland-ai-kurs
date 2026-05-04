@@ -597,7 +597,7 @@
                         <ul style="margin: 0; padding-left: 20px;">
                             <li style="font-size: 16px; color: #411B38; line-height: 1.6; margin-bottom: 8px;"><strong>Generell prompt:</strong> Klicka <em>Svara</em> &rarr; Copilot-ikonen &rarr; <em>"Skriv ett professionellt och empatiskt svar till denna kund."</em> Svaret blir generiskt: Copilot vet inte försäkringstyp, beräkning eller kundhistoria.</li>
                             <li style="font-size: 16px; color: #411B38; line-height: 1.6; margin-bottom: 8px;"><strong>Justera tonen:</strong> Testa följdinstruktioner som <em>"Gör det varmare"</em>, <em>"Korta ner till hälften"</em>, <em>"Mer formellt"</em>, <em>"Mindre ursäktande"</em>. Samma underliggande svar &mdash; men med olika röst. Visar att Copilot lyssnar på iterativa önskemål.</li>
-                            <li style="font-size: 16px; color: #411B38; line-height: 1.6;"><strong>Med kontext:</strong> Klistra in bakgrundsfakta från kundärendet och be om ett nytt svar med dessa fakta som underlag. Svaret blir nu specifikt och faktabaserat. Det här är prompt-modellens <em>Kontext</em>-byggsten i praktiken.</li>
+                            <li style="font-size: 16px; color: #411B38; line-height: 1.6;"><strong>Med kontext:</strong> Öppna <em>kundarende-missnojd-kund.txt</em> (finns i ZIP-paketet). Klistra in bakgrundsfakta-delen (nedre delen av filen, under rubriken <em>"Relevanta fakta om ärendet"</em>) och be om ett nytt svar med dessa fakta som underlag. Svaret blir nu specifikt och faktabaserat. Det här är prompt-modellens <em>Kontext</em>-byggsten i praktiken.</li>
                         </ul>
                         <p style="font-size: 15px; color: #7A4864; line-height: 1.6; margin-top: 12px; font-style: italic;">Pedagogisk poäng: två olika sätt att förbättra ett svar &mdash; ton-justering (samma innehåll, andra ord) och kontext-tillägg (mer/bättre information).</p>
                     </div>
@@ -609,7 +609,7 @@
                             <ul style="margin-top: 6px;">
                                 <li><strong>Steg 1 (generell prompt):</strong> <em>"Skriv ett professionellt och empatiskt svar till denna kund."</em></li>
                                 <li><strong>Steg 2 (justera tonen):</strong> Testa minst två av dessa följdinstruktioner och se hur svaret förändras: <em>"Gör det varmare"</em>, <em>"Korta ner till hälften"</em>, <em>"Mer formellt"</em>, <em>"Mindre ursäktande"</em>.</li>
-                                <li><strong>Steg 3 (lägg till kontext):</strong> <em>"Skriv om svaret med dessa fakta som underlag: [klistra in bakgrundsfakta-delen från kundärende-filen]. Använd Sveland-rösten (varm, klar, bemötande) och inkludera information om rätten till omprövning."</em></li>
+                                <li><strong>Steg 3 (lägg till kontext):</strong> <em>"Skriv om svaret med dessa fakta som underlag: [klistra in bakgrundsfakta-delen från kundärende-filen, under rubriken 'Relevanta fakta om ärendet']. Använd Sveland-rösten (varm, klar, bemötande) och inkludera information om rätten till omprövning."</em></li>
                             </ul>
                         </li>
                         <li>Diskutera sinsemellan:
