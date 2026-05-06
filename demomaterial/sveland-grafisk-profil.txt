@@ -122,21 +122,4 @@ UNDVIK
   härmed, varigenom, vidkommande → undvik helt
   ersättning lämnas → säg "vi betalar ut" eller "du får tillbaka"
 
-
-6. VAD AI INTE KAN GÖRA UTIFRÅN DENNA FIL
------------------------------------------------------------------
-
-Den här filen beskriver profilen i ord. Copilot kan läsa den och
-applicera tonen, ordvalen och budskapen i texter den skriver.
-
-Men: Copilot kan INTE använda den för att:
-  - Sätta exakta färger på slides eller diagram
-  - Välja rätt typsnitt visuellt
-  - Skapa logotyp eller grafiska element
-  - Garantera att en presentation "ser ut som Sveland"
-
-För visuell tillämpning behöver du starta från en faktisk
-PowerPoint-mall, eller justera manuellt efter att Copilot
-genererat innehållet.
-
 =================================================================
