@@ -822,17 +822,17 @@
                     <!-- DEMO B: POWERPOINT -->
                     <p style="font-size: 14px; color: #D68D6C; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 32px; margin-bottom: 8px;">Demo B &middot; Göra slides i PowerPoint (15 min)</p>
                     <p style="margin-bottom: 12px;"><strong>Case:</strong> Förvandla insikterna från demo A till 5 slides du kan visa Maria. Vi använder konkret <em>de tre observationerna Copilot gav i steg 2</em> (vad som sticker ut i Q1-datan) som underlag, plus diagrammet över handläggningstid från steg 3.</p>
-                    <p style="margin-bottom: 12px;"><strong>Filer som används:</strong> Copilot-svaren från demo A (kopierade) + <code>sveland-grafisk-profil.txt</code> (i ZIP).</p>
+                    <p style="margin-bottom: 12px;"><strong>Filer som används:</strong> Copilot-svaren från demo A (kopierade) + <code>sveland-presentationsmall.pptx</code> (i ZIP).</p>
 
                     <p style="font-size: 13px; color: #7A4864; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 18px; margin-bottom: 8px;">Vad jag visar steg för steg</p>
                     <ol>
-                        <li><strong>Ny PowerPoint, öppna Copilot-panelen</strong> i menyfliksområdet.</li>
-                        <li><strong>Bifoga den grafiska profilen</strong> i Copilot-panelen (gem-ikonen, eller dra-och-släpp): <code>sveland-grafisk-profil.txt</code>. Då har Copilot tillgång till Svelands tonalitet och ordval.</li>
-                        <li><strong>Be om utkast:</strong>
+                        <li><strong>Öppna mallen</strong> <code>sveland-presentationsmall.pptx</code> i PowerPoint. Den har redan Sveland-färger, typsnitt och layouts på plats.</li>
+                        <li><strong>Öppna Copilot-panelen</strong> i menyfliksområdet.</li>
+                        <li><strong>Be Copilot fylla mallen med innehåll:</strong>
                             <div class="code-block">Skapa en 5-sliders presentation om Q1-skadedata för avdelningschefen Maria.
 Mottagare: chef utan tid, vill ha snabba insikter och tydliga rekommendationer.
 Ton: saklig, lösningsorienterad, inte alarmistisk.
-Använd den bifogade grafiska profilen för tonalitet, ordval och tilltal.
+Använd befintlig mall, layouts och färger i denna presentation.
 
 Insikterna ser du nedan:
 [klistra in de tre observationerna Copilot gav i demo A steg 2]</div>
@@ -846,30 +846,34 @@ Insikterna ser du nedan:
                         <li><strong>Faktagranskning:</strong> Stämmer siffrorna mot rådatan? Är slutsatserna rimliga? Är tonen verkligen Sveland?</li>
                     </ol>
 
+                    <!-- PEDAGOGISK POÄNG -->
+                    <div class="note-box" style="margin-top: 24px; background: #EAF2EE; border-left-color: #2E5B4F;">
+                        <strong style="color: #411B38;">&#128161; Pedagogisk poäng: ge Copilot rätt utgångspunkt</strong>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">Vi testade först att bifoga den grafiska profilen som textfil och be Copilot bygga slides från grunden. Resultatet blev <em>fult</em> &mdash; Copilot kan inte applicera färger och typsnitt från en text-beskrivning på ett bra sätt.</p>
+                        <p style="margin-bottom: 8px;">Lösningen: ge Copilot en <strong>färdig mall</strong> att utgå från istället. Då hanterar Copilot innehållet (det den är bra på) och mallen hanterar designen (det den är dålig på).</p>
+                        <p style="margin-bottom: 0;">Det är en bra prompt-engineering-princip: <em>låt Copilot göra det den är bra på, och ge den scaffolding för resten</em>.</p>
+                    </div>
+
                     <!-- VAD FUNKAR / FUNKAR INTE -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
                         <div style="background: #EAF2EE; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #2E5B4F;">
                             <div style="font-size: 13px; font-weight: 700; color: #2E5B4F; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">&#10003; Det Copilot kan</div>
                             <ul style="margin: 0; padding-left: 18px; font-size: 14px; color: #411B38; line-height: 1.6;">
-                                <li>Förstå <strong>ord och budskap</strong> ur en grafisk profil</li>
-                                <li>Anpassa ton och tilltal (du-form, värme, undvika jargong)</li>
+                                <li>Fylla en befintlig mall med innehåll och behålla layouten</li>
+                                <li>Anpassa ton och tilltal från en mall eller textreferens</li>
                                 <li>Strukturera innehåll efter mottagare</li>
                                 <li>Generera utkast som du sedan finjusterar</li>
                             </ul>
                         </div>
                         <div style="background: #FFF0EB; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #C87C5C;">
-                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">&#10007; Det Copilot inte kan</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">&#10007; Det är knepigt</div>
                             <ul style="margin: 0; padding-left: 18px; font-size: 14px; color: #411B38; line-height: 1.6;">
-                                <li>Applicera exakta färger eller typsnitt från en text-instruktion</li>
-                                <li>Få presentationen att <em>visuellt</em> matcha Sveland utan en mall</li>
-                                <li>Skapa logotyp eller grafiska element</li>
-                                <li>Garantera att alla slides ser konsekventa ut</li>
+                                <li>Applicera färger och typsnitt från enbart en text-beskrivning</li>
+                                <li>Bygga visuell profil från grunden utan mall</li>
+                                <li>Skapa logotyp eller komplexa grafiska element</li>
+                                <li>Garantera konsekvens om du blandar flera mallar</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="note-box warning" style="margin-top: 24px;">
-                        <strong>&#9888;&#65039; Pedagogisk poäng:</strong> Just kontrasten ovan är värd att lägga märke till. Copilot är <em>skickligare på språk än på design</em>. För att presentationen ska se ut som Sveland behöver du starta från en riktig PowerPoint-mall (eller justera visuellt själv efteråt). Men <em>tonen och innehållet</em> kan Copilot få överraskande rätt &mdash; om du ger den rätt referenser.
                     </div>
                 </div>
 
