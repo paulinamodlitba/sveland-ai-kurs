@@ -1,0 +1,142 @@
+SVELAND DJURFÖRSÄKRING — GRAFISK PROFIL OCH VARUMÄRKESRIKTLINJER
+=================================================================
+
+Detta dokument beskriver Svelands grafiska profil och tonalitet
+för internt och externt material. Använd det som referens när
+du skapar presentationer, dokument eller kommunikation.
+
+OBS: Detta är en fiktiv version anpassad för AI-kursen.
+Den verkliga profilen finns i Svelands varumärkesmanual.
+
+=================================================================
+
+1. FÄRGPALETT
+-----------------------------------------------------------------
+
+PRIMÄRA FÄRGER
+
+  Sveland Grön           HEX #2E5B4F   RGB 46, 91, 79
+  - Används för rubriker, knappar, logotyp, accentelement
+  - Står för trygghet, omsorg och långsiktighet
+
+  Sveland Beige          HEX #FAE6D2   RGB 250, 230, 210
+  - Används för bakgrunder, lugna ytor
+  - Skapar värme och tillgänglighet
+
+SEKUNDÄRA FÄRGER
+
+  Mörkgrön (accent)      HEX #1A3D33   RGB 26, 61, 51
+  - Används sparsamt för djup och kontrast i rubriker
+
+  Varm korall            HEX #D68D6C   RGB 214, 141, 108
+  - Används för call-to-action, framhävningar, inte rubriker
+  - Skapar värme utan att skrika
+
+  Mjukvit                HEX #FFF6F0   RGB 255, 246, 240
+  - Bakgrundsfärg på kort, paneler, citat
+
+NEUTRAL
+
+  Mörk text              HEX #411B38   RGB 65, 27, 56
+  - All brödtext och längre läsning
+
+
+2. TYPOGRAFI
+-----------------------------------------------------------------
+
+PRIMÄRT TYPSNITT (rubriker)
+  Inter eller Source Sans Pro, semibold/bold
+  Stora rubriker: 32-48 pt
+  Underrubriker: 18-22 pt
+  Färg: Sveland Grön
+
+SEKUNDÄRT TYPSNITT (brödtext)
+  Inter eller Source Sans Pro, regular
+  Storlek: 14-16 pt
+  Linjeavstånd: 1.5
+  Färg: Mörk text
+
+UNDVIK
+  - Decimaltjocka eller skuggade typsnitt
+  - Versaler i längre stycken (svårläst)
+  - Mer än två typsnittsfamiljer per dokument
+
+
+3. TONALITET — SÅ HÄR LÅTER VI
+-----------------------------------------------------------------
+
+KÄRNA
+  Vi är djurens försäkringsbolag. Vi älskar djur, och vi pratar
+  som någon som faktiskt bryr sig — inte som en byråkrat.
+
+VI ÄR
+  - Varma och nära, aldrig kalla eller distanserade
+  - Tydliga och raka, aldrig svävande eller juridiska
+  - Trygga och kunniga, aldrig nedlåtande
+  - Lättförstådda, aldrig pretentiösa
+
+VI ÄR INTE
+  - Säljande på ett aggressivt sätt
+  - Försäkringsformella med "härmed informeras ni"
+  - Skrämmande ("vad händer om...")
+  - Ironiska eller flåshurtiga
+
+
+4. TILLTAL OCH SPRÅK
+-----------------------------------------------------------------
+
+KUNDTILLTAL
+  Använd alltid "du" till kunden. Aldrig "ni" eller "kunden".
+  Skriv som om du pratar med en granne som du gillar.
+
+EXEMPEL — JA
+  "Vi är glada att du valt Sveland för din hund."
+  "Här är vad som gäller för Bellas operation."
+  "Hör av dig om något är oklart — vi finns här."
+
+EXEMPEL — NEJ
+  "Försäkringstagaren härmed informeras om beslutet."
+  "Med vänlig hälsning, härmed bekräftas..."
+  "Vänligen ta del av bifogad information."
+
+ÅTERKOMMANDE BUDSKAP
+  - "Trygghet för ditt djur"
+  - "Vi älskar djur"
+  - "Djurens försäkringsbolag"
+  - "Ägda av våra kunder, sedan över 100 år"
+
+
+5. ORD VI ANVÄNDER
+-----------------------------------------------------------------
+
+GÄRNA
+  djur (inte "djurslag" om det går)
+  ditt djur, din hund, din katt
+  trygghet, omsorg, långsiktighet
+  hjälpa, finnas där, lyssna
+  enkelt, tydligt, snabbt
+
+UNDVIK
+  försäkringstagare → säg "du" eller "kund"
+  reglera ärende → säg "hjälpa dig med ärendet"
+  härmed, varigenom, vidkommande → undvik helt
+  ersättning lämnas → säg "vi betalar ut" eller "du får tillbaka"
+
+
+6. VAD AI INTE KAN GÖRA UTIFRÅN DENNA FIL
+-----------------------------------------------------------------
+
+Den här filen beskriver profilen i ord. Copilot kan läsa den och
+applicera tonen, ordvalen och budskapen i texter den skriver.
+
+Men: Copilot kan INTE använda den för att:
+  - Sätta exakta färger på slides eller diagram
+  - Välja rätt typsnitt visuellt
+  - Skapa logotyp eller grafiska element
+  - Garantera att en presentation "ser ut som Sveland"
+
+För visuell tillämpning behöver du starta från en faktisk
+PowerPoint-mall, eller justera manuellt efter att Copilot
+genererat innehållet.
+
+=================================================================
