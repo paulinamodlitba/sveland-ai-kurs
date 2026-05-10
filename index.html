@@ -1256,22 +1256,55 @@ största risk om AI gör fel.</div>
                     </div>
                 </div>
 
-                <!-- ÖVNING 5: INDIVIDUELL PLAN -->
+                <!-- ÖVNING 5: BYGG DIN COACH-AGENT -->
                 <div class="exercise" style="border-left: 6px solid #C87C5C;">
                     <div class="exercise-header">
                         <span class="exercise-number" style="background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%);">5</span>
-                        <span class="exercise-title">Individuell fortsättningsplan: med Copilot som coach</span>
+                        <span class="exercise-title">Bygg din personliga AI-coach och få din fortsättningsplan</span>
                     </div>
-                    <p class="exercise-intro">Både övning och start på slutuppgiften. Du använder Copilot som coach för att skriva din egen 30-dagarsplan. <strong>Arbetssätt:</strong> individuellt &mdash; men ni sitter kvar i samma grupprum så ni kan bolla en formulering eller fråga om någon fastnar.</p>
+                    <p class="exercise-intro">Nu bygger var och en sin egen agent. En personlig AI-coach som hjälper dig fortsätta lära dig AI på Sveland efter kursen. Du använder den direkt för att få din 30-dagarsplan, och har sedan en agent kvar att gå tillbaka till. <strong>Arbetssätt:</strong> individuellt, men ni sitter kvar i samma grupprum så ni kan bolla en formulering eller fråga om någon fastnar.</p>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Del 1: Bygg agenten</h4>
                     <ol>
-                        <li><strong>Starta med roll och motfrågor:</strong>
-                            <div class="code-block">Agera som en AI-coach för mig. Jag har gått en 3-halvdagars AI-kurs och ska nu skriva en 30-dagarsplan för hur jag ska fortsätta använda AI i min roll som [din titel] på Sveland Djurförsäkring. Innan du hjälper mig: ställ mig 3 motfrågor som du behöver svar på för att kunna coacha mig bra.</div>
+                        <li><strong>Öppna Agent Builder.</strong> I Copilot Chat: klicka <em>Skapa agent</em> uppe till höger.</li>
+                        <li><strong>Klistra in instruktionen nedan</strong> och fyll i fälten i hakparenteser:
+                            <div class="code-block">Du är min personliga AI-coach för fortsatt lärande på Sveland Djurförsäkring.
+Jag har just gått en 3-halvdagars AI-kurs och vill fortsätta utvecklas i min vardag.
+
+Din roll:
+- Hjälp mig sätta realistiska och konkreta mål för 30 dagar i taget
+- Föreslå AI-användningsområden som passar min roll och min vardag
+- Påminn mig alltid om faktagranskning, GDPR och säker AI-användning
+- Coacha snarare än ge färdiga svar, ställ följdfrågor när det behövs
+
+Min kontext:
+- Roll: [din titel, t.ex. teamledare skadehantering]
+- Team: [ditt team eller din avdelning]
+- AI-vana idag: [vad du redan testat och använt]
+- Det jag tycker är knepigt med AI: [t.ex. att lita på svaren, hitta tid att testa]</div>
                         </li>
-                        <li><strong>Svara på motfrågorna</strong> ärligt. Copilot vet nu din kontext.</li>
-                        <li><strong>Be om en plan</strong> med tre delar: (1) tre konkreta AI-användningsområden i min vardag, (2) vad jag testar de närmaste 30 dagarna (inkludera agenten du just byggde), (3) hur jag delar lärdomar med mitt team.</li>
-                        <li><strong>Fråga Copilot kritiskt:</strong> <em>"Är den här planen realistisk för min vardag? Vilka fallgropar ser du? Vad saknas?"</em></li>
-                        <li><strong>Justera</strong> tills du har en plan du <em>faktiskt</em> vill följa.</li>
+                        <li><strong>Lägg till kunskap (valfritt):</strong> Peka på dina egna anteckningar från kursen, din ambassadörsplan från hemläxa 2, eller Svelands AI-policy om du vill att agenten ska känna till dem.</li>
+                        <li><strong>Namnge och spara</strong> agenten med ett namn du kommer ihåg, t.ex. <em>"AI-coach [ditt förnamn]"</em>.</li>
                     </ol>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Del 2: Använd agenten för din fortsättningsplan</h4>
+                    <ol>
+                        <li><strong>Be om motfrågor:</strong>
+                            <div class="code-block">Innan vi börjar: ställ mig 3 motfrågor som du behöver svar på för att kunna coacha mig bra.</div>
+                        </li>
+                        <li><strong>Svara på motfrågorna</strong> ärligt. Agenten vet nu mer om din kontext.</li>
+                        <li><strong>Be om planen:</strong>
+                            <div class="code-block">Skriv min 30-dagarsplan i tre delar: (1) tre konkreta AI-användningsområden i min vardag, (2) vad jag testar de närmaste 30 dagarna (inkludera agenten jag byggde i kursen), (3) hur jag delar lärdomar med mitt team.</div>
+                        </li>
+                        <li><strong>Be om kritisk feedback:</strong>
+                            <div class="code-block">Är den här planen realistisk för min vardag? Vilka fallgropar ser du? Vad saknas?</div>
+                        </li>
+                        <li><strong>Justera</strong> tills du har en plan du faktiskt vill följa. Spara den. Återkom till coachen om en vecka.</li>
+                    </ol>
+
+                    <div class="note-box" style="margin-top: 20px;">
+                        <strong>Bonus:</strong> Agenten finns kvar efter kursen. Använd den varje gång du fastnar, behöver tänka högt om en AI-idé, eller vill stämma av om en plan är realistisk. Det är så agenter blir värdefulla, när du går tillbaka till dem.
+                    </div>
                 </div>
 
                 <!-- AVSLUTANDE REFLEKTION -->
