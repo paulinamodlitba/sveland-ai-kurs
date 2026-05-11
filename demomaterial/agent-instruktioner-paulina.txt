@@ -762,6 +762,54 @@ strukturerar, Copilot-i-Planner skapar uppgifter) är ett exempel på
 "agent-orkestrering" — ett begrepp deltagarna kommer höra mer av.
 
 
+DEMO-SCENARIO: BYGG EN PLAN FRÅN GRUNDEN (DIREKT TILL PLANNER-AGENTEN)
+
+Det här är ett kraftfullt exempel om du har Frontier-versionen av
+Copilot-i-Planner. Visar att du kan beskriva en hel plan i naturligt
+språk, få ett strukturerat förslag, och låta agenten skapa den åt
+dig.
+
+Steg 1: Klistra in en lång, naturligt-formulerad prompt i Copilot-
+i-Planner. Använd den här som demo:
+
+  Skapa en plan för hur jag och mina närmaste kollegor ska fortsätta
+  upptäcka och dela AI-användning de kommande tre månaderna. Jag
+  arbetar som kundtjänstansvarig på Sveland Djurförsäkring. Vi har
+  precis genomgått en 3-halvdagars AI-kurs och deltagarna är på olika
+  nivåer av nyfikenhet och självförtroende. Jag vill bygga en kultur
+  där AI blir naturligt i vardagen, utan att det känns obligatoriskt,
+  peppigt eller pinsamt. Med finess, inte tjat. Planen är till mig
+  själv som ledare eller specialist - en checklista och verktygslåda
+  för de kommande tre månaderna. Strukturera planen i tre delar och
+  håll den till max en A4: (1) tre micro-rutiner i veckan (t.ex.
+  "AI-tipset på måndagsmötet"), (2) ett sätt att fånga upp kollegors
+  idéer och upptäckter, (3) ett sätt att dela vidare med andra
+  avdelningar.
+
+Steg 2: Agenten erbjuder att omvandla detta till en faktisk Planner-
+plan. Den frågar om det ska vara privat eller delad plan. Svara:
+"Gärna en delad plan."
+
+Steg 3: Agenten föreslår en struktur (i mitt test: 3 buckets +
+verktygslåda-uppgifter som återkommer varje vecka). Den skapar inte
+direkt utan väntar på godkännande.
+
+Steg 4: Säg "Kör" — agenten skapar planen i Planner.
+
+Pedagogiska poänger att lyfta i demon:
+- En enda lång, välformulerad prompt → strukturerad plan
+- Agenten frågar tillbaka istället för att gissa (privat vs delad)
+- Den föreslår innan den agerar — ger dig kontrollen
+- "Kör" är ett tydligt steg som markerar att människan har sista
+  ordet, även när agenten är kraftfull
+
+När fungerar det här? När du redan vet ungefär vad du vill ha och
+kan beskriva det. Om du istället har rörig indata (ett långt mejl,
+ett strategidokument, möteanteckningar) som behöver struktureras
+först — då är Planner-konverteraren (agent 8) bättre som mellansteg.
+
+---
+
 DEMO-FLÖDE: COPILOT I PLANNER (AGENT MODE)
 
 Om Premium-Planner finns aktiverad — kör denna fyra-stegs-sekvens
