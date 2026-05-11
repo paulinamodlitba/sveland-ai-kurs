@@ -478,6 +478,79 @@ om Outlook-integrationen är seg.
 
 ---
 
+## Snabbguide: Microsoft Planner (för Mötes-uppföljaren)
+
+Du behöver inte vara expert. Det räcker att du kan visa hur ett **bevaknings-
+lista-element** ser ut i Planner och hur Agentens output kan klistras in
+manuellt.
+
+### Vad är Planner?
+
+Microsoft Planner är ett enkelt projekt/uppgifts-verktyg i Microsoft 365.
+Tänk en visuell att-göra-tavla (kanban) där varje uppgift är ett "kort" med
+titel, ansvarig, deadline och en kort beskrivning. Korten ligger i
+kolumner (s.k. "buckets") som t.ex. *Att göra*, *Pågående*, *Klart*.
+
+Planner används ofta för:
+- Bevakningslistor efter möten (åtgärdspunkter med ansvarig och deadline)
+- Teamets gemensamma uppgifter
+- Enklare projekt utan extra licens (ingår i M365)
+
+### Så öppnar du Planner
+
+1. Gå till [microsoft365.com](https://www.microsoft365.com) och logga in
+2. Klicka på app-väljaren (de nio prickarna uppe till vänster) och välj
+   **Planner**. Eller gå direkt till [tasks.office.com](https://tasks.office.com).
+3. Du hittar också Planner som flik i Teams-kanaler om någon lagt till det
+
+### Skapa en "plan" (=tavla) på 30 sekunder
+
+1. Klicka **Ny plan** &rarr; **Tom plan**
+2. Ge planen ett namn, t.ex. *"Skadeenheten — bevakningslista Q2"*
+3. Välj om planen är **privat** (bara du) eller **offentlig** (för en
+   Microsoft 365-grupp)
+4. Klicka **Skapa**. Du landar på den tomma tavlan.
+
+### Lägga till en uppgift
+
+1. Klicka **Lägg till uppgift** under valfri bucket
+2. Skriv titel, deadline och tilldela till en person (om relevant)
+3. Klicka på uppgiften för att öppna detaljer: lägg till beskrivning,
+   checklista, anteckningar, bifogade filer
+4. Spara genom att klicka utanför
+
+### Så kopplar du Mötes-uppföljaren (Agent 6) till Planner
+
+Agenten kan inte själv skapa uppgifter i Planner *automatiskt* &mdash; den
+hjälper dig att **förbereda** dem i ett format som är lätt att klistra in.
+Flödet i demon:
+
+1. Klistra in mötesanteckningar i Mötes-uppföljaren
+2. Agenten returnerar bl.a. en bevakningslista i tabell-format
+3. För varje rad i tabellen: öppna Planner, klicka *Lägg till uppgift*,
+   skriv titel + tilldela + sätt deadline. Eller använd Excel-export &rarr;
+   importera i Planner om listan är lång (verktyg som *Smart Tasks*-importören
+   finns i större Sveland-tenant)
+4. Be Agenten direkt i samma chatt: *"Skapa en checklist-text jag kan klistra
+   in i Planner som beskrivning för varje uppgift."* Då får du en länkad
+   redovisning.
+
+### Vad du visar i demon
+
+Behöver inte vara komplicerat:
+1. Öppna en tom Plan i förväg och visa upp tavlan på storskärm
+2. Kör agenten med mötesanteckningar
+3. Tag första åtgärdspunkten från agentens output, klistra in som
+   ny uppgift i Planner medan deltagarna tittar
+4. Säg: *"Det här är vad jag menar med att en agent **förbereder**
+   beslut åt mig. Den gör inte allt. Den gör det jobbiga, jag gör det
+   smarta &mdash; klickar in det där det ska vara."*
+
+Det räcker. Du behöver inte ha tio uppgifter klara, en räcker för att
+visa principen.
+
+---
+
 ## Tips inför sessionen
 
 - **SharePoint-länkar:** Agent Builder accepterar bara URL:er max två nivåer
