@@ -281,6 +281,12 @@ att gissa.
 
 ## Tips inför sessionen
 
+- **SharePoint-länkar:** Agent Builder accepterar bara URL:er max två nivåer
+  ner i SharePoint-strukturen. Om du försöker peka på en djupare mapp får du
+  felmeddelandet *"URL:en är för djupt länkad"* — peka i stället på huvud-
+  webbplatsen (t.ex. `https://sveland.sharepoint.com/sites/skadeprocesser`) så
+  får agenten tillgång till hela platsen enligt Copilots behörighetsregler.
+  [Microsofts dokumentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites#agent-capabilities-and-licensing-models).
 - **Bygg och testa minst en dag innan** — agenter kan vara segare att svara
   första gångerna efter aktivering
 - **Spara skärmbild av varje agents instruktion** — om något fail:ar live kan du
