@@ -628,6 +628,60 @@ strukturerar, Copilot-i-Planner skapar uppgifter) är ett exempel på
 "agent-orkestrering" — ett begrepp deltagarna kommer höra mer av.
 
 
+DEMO-FLÖDE: COPILOT I PLANNER (AGENT MODE)
+
+Om Premium-Planner finns aktiverad — kör denna fyra-stegs-sekvens
+för att visa hur Planner-agenten orkestrerar över möten, e-post och
+chattar. Det är en bredare demo än Mötes-uppföljaren ensam.
+
+Steg 1: Skapa uppgifter från veckans aktivitet
+
+I Copilot-fältet i Planner, skriv:
+
+  Granska mina möten, e-postmeddelanden och chattar från den senaste
+  veckan och hjälp mig att skapa uppgifter för de mest brådskande
+  åtgärdsobjekt jag behöver slutföra.
+
+Förväntad effekt: agenten går igenom kalender, Outlook och Teams,
+plockar ut åtgärdspunkter och föreslår nya uppgifter.
+
+Steg 2: Lägg in dem i rätt plan
+
+Följdfråga:
+
+  Skapa uppgifterna i [namn på din specifika Planner-plan].
+
+Detta säkerställer att uppgifterna inte hamnar i en standardplan
+utan i den ni faktiskt använder för bevakningslistor.
+
+Steg 3: Hantera en oväntad dag
+
+Säg:
+
+  Jag är ledig idag, kan du skjuta alla dagens tasks till imorgon
+  och lista vilka tasks som har flyttats på?
+
+Förväntad effekt: agenten flyttar deadlines och sammanfattar vad som
+nu ligger på imorgon. Visar att agenten inte bara skapar uppgifter
+utan kan reorganisera dem.
+
+Steg 4: Veckoplanering
+
+Säg:
+
+  Hjälp mig att planera min vecka med alla tasks som har deadline
+  nästa vecka.
+
+Förväntad effekt: agenten grupperar uppgifter per dag, prioriterar
+och föreslår tidsblock. En naturlig övergång från reaktiv hantering
+(steg 1-3) till proaktiv planering.
+
+Pedagogisk poäng: detta är en agent som inte bara svarar på frågor
+utan agerar över flera datakällor och tar emot kontinuerliga
+instruktioner. Lyfter principen att en bra agent är som en kollega
+du kan delegera till och be reorganisera — inte ett engångs-svar.
+
+
 ===================================================================
 TIPS INFÖR SESSIONEN
 ===================================================================
