@@ -572,16 +572,37 @@ LÄGGA TILL EN UPPGIFT
 
 SÅ KOPPLAR DU MÖTES-UPPFÖLJAREN (Agent 6) TILL PLANNER
 
-Agenten kan inte själv skapa uppgifter i Planner automatiskt. Den
-hjälper dig att förbereda dem i ett format som är lätt att klistra
+Det finns två vägar att få in agentens output i Planner. Den snabba
+kräver Premium-licens, den långsamma funkar alltid.
+
+VÄG A: Copilot i Planner (snabb, kräver Premium-plan, förhandsversion)
+
+Microsoft har en inbyggd Copilot i Planner som kan skapa uppgifter
+direkt utifrån en prompt. Kraven: planen måste vara skapad som en
+Premiumplan, och Copilot in Planner är fortfarande i förhandsversion.
+Så här gör du:
+
+1. Öppna Planner i Microsoft Teams och välj en Premiumplan
+2. Klicka Copilot-ikonen längst upp till höger
+3. Skriv en prompt, t.ex. "Skapa uppgifter för bevakningslistan från
+   detta möte: [klistra in mötes-uppföljarens output]"
+4. Copilot i Planner föreslår uppgifter som läggs in i planen
+
+Bra att veta: Sveland behöver bekräfta att de har Premium-plan
+aktiverad innan demon. Om inte, gå till väg B.
+
+Mer info:
+https://support.microsoft.com/sv-se/office/skapa-nya-uppgifter-med-copilot-i-planner-f%C3%B6rhandsversion-8cb4440c-0878-4470-a660-561c00dd4c44
+
+VÄG B: Manuell inklistring (funkar alltid)
+
+Om Premium-Planner inte är aktiverad: agenten förbereder, du klistrar
 in. Flödet i demon:
 
 1. Klistra in mötesanteckningar i Mötes-uppföljaren
 2. Agenten returnerar bl.a. en bevakningslista i tabell-format
 3. För varje rad i tabellen: öppna Planner, klicka Lägg till
-   uppgift, skriv titel + tilldela + sätt deadline. Eller använd
-   Excel-export → importera i Planner om listan är lång (verktyg
-   som Smart Tasks-importören finns i större Sveland-tenant)
+   uppgift, skriv titel + tilldela + sätt deadline
 4. Be Agenten direkt i samma chatt: "Skapa en checklist-text jag kan
    klistra in i Planner som beskrivning för varje uppgift." Då får
    du en länkad redovisning.
@@ -590,15 +611,21 @@ VAD DU VISAR I DEMON
 
 Behöver inte vara komplicerat:
 1. Öppna en tom Plan i förväg och visa upp tavlan på storskärm
-2. Kör agenten med mötesanteckningar
-3. Tag första åtgärdspunkten från agentens output, klistra in som
-   ny uppgift i Planner medan deltagarna tittar
+2. Kör Mötes-uppföljaren med mötesanteckningar
+3. Antingen: prompta Copilot i Planner att skapa uppgifterna (väg A
+   om Premium finns), eller klistra in en åtgärdspunkt manuellt
+   (väg B)
 4. Säg: "Det här är vad jag menar med att en agent förbereder beslut
    åt mig. Den gör inte allt. Den gör det jobbiga, jag gör det
-   smarta — klickar in det där det ska vara."
+   smarta — klickar in det där det ska vara, eller låter en annan
+   agent ta över."
 
 Det räcker. Du behöver inte ha tio uppgifter klara, en räcker för
 att visa principen.
+
+Pedagogisk pärla att lyfta: två agenter i kedja (Mötes-uppföljaren
+strukturerar, Copilot-i-Planner skapar uppgifter) är ett exempel på
+"agent-orkestrering" — ett begrepp deltagarna kommer höra mer av.
 
 
 ===================================================================
