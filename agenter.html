@@ -628,7 +628,7 @@ Svelands ton: direkt, varm, konkret. Inte alarmistisk.</div>
                     <span class="agent-number">8</span>
                     <span class="agent-summary-text">
                         Planner-konverteraren
-                        <span class="agent-summary-tagline">Tar fritext (mejl, dokument, anteckningar) och förbereder en bevakningslista för Planner.</span>
+                        <span class="agent-summary-tagline">Tar fritext (mejl, dokument, anteckningar) och skapar en färdig prompt som du klistrar in i Copilot-i-Planner. En kopiering, alla uppgifter skapas automatiskt.</span>
                     </span>
                     <span class="agent-chevron">&#9662;</span>
                 </summary>
@@ -643,7 +643,7 @@ Svelands ton: direkt, varm, konkret. Inte alarmistisk.</div>
                             <span>Fri prompt (Beskriv-läget)</span>
                             <button class="copy-btn" data-copy-target="agent8-fri">Kopiera</button>
                         </div>
-                        <div class="prompt-block" id="agent8-fri">Bygg en agent som hjälper mig fånga upp åtgärdspunkter ur olika typer av innehåll: mejl, strategidokument, anteckningar från möten, brainstorm, chat-historik, eller en lång att-göra-text. Agenten ska identifiera vad som faktiskt är en åtgärd (inte bakgrund eller diskussion), gruppera relaterade saker, och returnera en strukturerad lista i Planner-format med titel, ansvarig roll, deadline och en kort beskrivning per uppgift. När agenten är osäker om något är en åtgärd eller bara information ska den fråga mig istället för att gissa. Svelands ton: rak, varm, konkret. Inkludera också ett textblock som är optimerat att klistras in i Copilot-i-Planner-prompten.</div>
+                        <div class="prompt-block" id="agent8-fri">Bygg en agent som hjälper mig fånga upp uppgifter ur olika typer av innehåll: mejl, strategidokument, anteckningar från möten, brainstorm, chat-historik, eller en lång att-göra-text. Agenten ska identifiera vad som faktiskt är en uppgift att göra (inte bakgrund eller diskussion), gruppera relaterade saker, och returnera EN färdig prompt som jag kan klistra direkt in i Copilot-i-Planner. Prompten ska börja med "Skapa följande uppgifter i [planens namn]:" och sedan lista uppgifterna med titel, tilldelad roll, deadline och kort beskrivning på ett naturligt sätt. När agenten är osäker om något är en uppgift eller bara information ska den fråga mig istället för att gissa. Svelands ton: rak, varm, konkret.</div>
                     </div>
 
                     <div class="agent-section">
@@ -651,26 +651,38 @@ Svelands ton: direkt, varm, konkret. Inte alarmistisk.</div>
                             <span>Instruktion (Konfigurera-läget)</span>
                             <button class="copy-btn" data-copy-target="agent8-konf">Kopiera</button>
                         </div>
-                        <div class="prompt-block" id="agent8-konf">Du extraherar åtgärdspunkter ur innehåll och förbereder dem för Microsoft Planner. När användaren delar innehåll (mejl, dokument, mötesanteckningar, brainstorm, chat-historik, fritext) ska du:
+                        <div class="prompt-block" id="agent8-konf">Du tar in fritext och skapar en färdig prompt som användaren klistrar in i Copilot-i-Planner. När användaren delar innehåll (mejl, dokument, mötesanteckningar, brainstorm, chat-historik, fritext) ska du:
 
-1. Identifiera vad som faktiskt är åtgärder. Skilj mellan:
-   - ÅTGÄRD: någon ska göra något konkret
-   - INFORMATION: bakgrund, status, beslut redan tagna (ingen åtgärd)
-   - DISKUSSION: oavslutade resonemang (kan vara åtgärd om någon ska följa upp, annars info)
+1. Identifiera vad som faktiskt är uppgifter att göra. Skilj mellan:
+   - UPPGIFT: någon ska göra något konkret
+   - INFORMATION: bakgrund, status, beslut redan tagna (ingen uppgift)
+   - DISKUSSION: oavslutade resonemang (kan vara uppgift om någon ska följa upp, annars info)
 
-2. För varje åtgärd, ge:
+2. För varje uppgift, samla:
    - Titel: max 8 ord, börjar med verb
-   - Ansvarig roll: inte personnamn om du inte vet säkert
-   - Deadline: konkret datum om det går att utläsa, annars relativ
-   - Beskrivning: 1-2 meningar med tillräcklig kontext
+   - Tilldelad roll: inte personnamn om du inte vet säkert
+   - Deadline: konkret datum om det går att utläsa, annars relativ ("denna vecka", "inom 7 dagar")
+   - Kort beskrivning: 1-2 meningar med tillräcklig kontext
 
-3. Gruppera relaterade åtgärder så de inte hamnar i Planner som isolerade rader.
+3. Gruppera relaterade uppgifter.
 
-4. Returnera resultatet i två format:
-   A) Strukturerad tabell med kolumnerna Titel | Roll | Deadline | Beskrivning
-   B) Ett textblock optimerat för Copilot-i-Planner-prompten: "Skapa följande uppgifter i Planner-planen [namn]: [lista uppgifterna på ett naturligt sätt]"
+4. Fråga användaren vilken Planner-plan uppgifterna ska skapas i (om det inte redan är angivet).
 
-5. Om något i innehållet är otydligt eller du är osäker om det är åtgärd eller information, FRÅGA användaren istället för att gissa.
+5. PRIMÄR OUTPUT: returnera EN färdig prompt i naturligt språk som användaren kan klistra direkt in i Copilot-i-Planner. Formatet:
+
+"Skapa följande uppgifter i [planens namn]:
+
+1. [Titel uppgift 1]
+   Tilldelad: [roll]. Deadline: [datum]. Beskrivning: [1-2 meningar]
+
+2. [Titel uppgift 2]
+   Tilldelad: [roll]. Deadline: [datum]. Beskrivning: [1-2 meningar]
+
+..."
+
+Bekräfta att användaren bara behöver kopiera detta block, öppna sin Planner-plan och klistra in det i Copilot-i-Planner-prompten där.
+
+6. Om något i innehållet är otydligt eller du är osäker om det är uppgift eller information, FRÅGA användaren istället för att gissa.
 
 Använd Svelands ton: rak, varm, konkret. Var ärlig om osäkerhet.</div>
                     </div>
@@ -690,28 +702,29 @@ Använd Svelands ton: rak, varm, konkret. Var ärlig om osäkerhet.</div>
                             <span>Välkomstmeddelande</span>
                             <button class="copy-btn" data-copy-target="agent8-welcome">Kopiera</button>
                         </div>
-                        <div class="prompt-block welcome-block" id="agent8-welcome">Hej! Klistra in vad som helst med åtgärdspunkter: mejl, dokument, mötesanteckningar, brainstorm-listor. Jag plockar ut det som faktiskt är åtgärder, strukturerar i Planner-format och förbereder dem så du kan skapa dem direkt i Planner.</div>
+                        <div class="prompt-block welcome-block" id="agent8-welcome">Hej! Klistra in vad som helst med saker att göra: mejl, dokument, mötesanteckningar, brainstorm-listor. Jag plockar ut uppgifterna och ger dig EN färdig prompt som du klistrar in i Copilot-i-Planner. Då skapas alla uppgifter automatiskt.</div>
                     </div>
 
                     <div class="agent-section">
                         <div class="agent-section-label">Startprompter</div>
                         <div class="starter-prompts">
-                            <div class="starter-prompt">Hitta åtgärdspunkterna i det här innehållet</div>
-                            <div class="starter-prompt">Förbered en bevakningslista jag kan klistra in i Planner</div>
-                            <div class="starter-prompt">Skapa prompt för Copilot-i-Planner baserat på det här</div>
+                            <div class="starter-prompt">Skapa Planner-prompt från det här innehållet</div>
+                            <div class="starter-prompt">Hitta uppgifterna och förbered dem för Planner</div>
+                            <div class="starter-prompt">Vilka uppgifter behöver jag skapa i Planner från det här?</div>
                         </div>
                     </div>
 
                     <div class="agent-section">
-                        <div class="agent-section-label">Tips: kedja med Copilot i Planner</div>
+                        <div class="agent-section-label">Flödet: kedja med Copilot i Planner</div>
                         <div class="agent-section-content">
                             <ol style="margin-left: 20px;">
                                 <li>Kör Planner-konverteraren med ditt valda innehåll</li>
-                                <li>Kopiera textblocket från Format B (optimerat för Planner-Copilot)</li>
+                                <li>Kopiera prompten du får tillbaka</li>
                                 <li>Öppna din Planner-plan, klicka Copilot-ikonen</li>
-                                <li>Klistra in textblocket. Copilot i Planner skapar uppgifterna automatiskt</li>
+                                <li>Klistra in prompten. Copilot-i-Planner skapar alla uppgifter automatiskt</li>
                             </ol>
-                            <p style="margin-top: 12px;"><em>Två agenter i kedja: en strukturerar, en agerar. Klassisk agent-orkestrering.</em></p>
+                            <p style="margin-top: 12px;"><em>En kopiering totalt. Två agenter i kedja: en strukturerar, en agerar. Klassisk agent-orkestrering.</em></p>
+                            <p style="margin-top: 8px; font-size: 14px; color: #7A4864;"><em>Copilot-i-Planner kräver Premium-plan. Saknas det: be agenten i stället formatera som tabell, så kopierar du in rad för rad manuellt.</em></p>
                         </div>
                     </div>
                 </div>
