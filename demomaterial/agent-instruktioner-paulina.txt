@@ -765,8 +765,8 @@ Steg 3: Hantera en oväntad dag
 
 Säg:
 
-  Jag är ledig idag, kan du skjuta alla dagens tasks till imorgon
-  och lista vilka tasks som har flyttats på?
+  Jag är ledig idag, kan du skjuta alla dagens uppgifter till imorgon
+  och lista vilka uppgifter som har flyttats på?
 
 Förväntad effekt: agenten flyttar deadlines och sammanfattar vad som
 nu ligger på imorgon. Visar att agenten inte bara skapar uppgifter
@@ -776,7 +776,7 @@ Steg 4: Veckoplanering
 
 Säg:
 
-  Hjälp mig att planera min vecka med alla tasks som har deadline
+  Hjälp mig att planera min vecka med alla uppgifter som har deadline
   nästa vecka.
 
 Förväntad effekt: agenten grupperar uppgifter per dag, prioriterar
