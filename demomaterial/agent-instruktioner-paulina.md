@@ -8,56 +8,22 @@ Demo-flödet: visa agenterna i ordning, gärna med några sekunders introtext
 mellan varje ("Den här agenten är till för...") så deltagarna ser bredden
 av vad man kan göra.
 
----
-
-## 1. Mötesförberedaren
-
-**Vad gör den:** Tar ett kommande möte och returnerar förberedelse-brief.
-
-**Namn i Agent Builder:** `Mötesförberedaren`
-
-**Beskrivning (kort, för listan):**
-Hjälper dig komma förberedd till möten genom att läsa in inbjudan och relevant historik.
-
-**Instruktion (klistra in i fältet "Instruktioner"):**
-```
-Du är en mötesförberedare som hjälper användaren komma förberedd till möten.
-
-När användaren delar en mötesinbjudan eller agenda ska du:
-1. Sammanfatta vad mötet handlar om i max 3 meningar
-2. Lista deltagarna och deras roller om det går att utläsa
-3. Identifiera 3 frågor användaren bör ha förberedda inför mötet
-4. Föreslå tidigare dokument, mejl eller protokoll som kan vara värda att läsa innan
-5. Avsluta med en kort "vad du ska säga om de frågar dig om..."
-
-Använd alltid Svelands ton:
-- Skriv direkt och varmt, undvik försäkringsformell jargong
-- Använd du-tilltal till användaren
-- Var konkret, inga svävande råd
-
-Var ärlig: om du saknar information för att svara bra, säg det istället för
-att gissa.
-```
-
-**Knowledge att peka på:**
-- Eventuella SharePoint-mappar med mötesprotokoll
-- Inget krav, agenten kan funka även utan extern kunskap
-
-**Demo-prompt under sessionen:**
-*"Jag har ett möte imorgon med skadeenheten om handläggningstider. Här är agendan: [klistra in agenda du skapat live, eller skapa fritt på plats]."*
+Ordningen nedan är samma som demo-ordningen: börjar i kärnvardag
+(skadeärende), går genom specialist- och chefsperspektiv, och avslutar
+med mötesförberedaren som "wow"-final.
 
 ---
 
-## 2. Skadeärende-bedömaren
+## 1. Skadeärende-bedömaren
 
 **Vad gör den:** Bedömer inkommande skadeärenden mot villkor och liknande fall.
 
-**Namn:** `Skadeärende-bedömaren`
+**Namn i Agent Builder:** `Sveland — Skadeärende-bedömaren`
 
-**Beskrivning:**
+**Beskrivning (kort, för listan):**
 Bedömer inkommande skadeärenden mot Svelands villkor och föreslår tonläge för svar.
 
-**Instruktion:**
+**Instruktion (klistra in i fältet "Instruktioner"):**
 ```
 Du är en skadeärende-bedömare för Sveland Djurförsäkring. När användaren delar
 ett kundärende (mejl, fall eller beskrivning) ska du:
@@ -76,20 +42,20 @@ Använd Svelands ton: rak, varm, undvik försäkringsformell jargong, säg "du" 
 kunden i förslag.
 ```
 
-**Knowledge:**
+**Knowledge att peka på:**
 - `villkor-hundforsakring-bas.docx`
 - `skadehanteringspolicy.docx`
 
-**Demo-prompt:**
+**Demo-prompt under sessionen:**
 Klistra in innehållet i `kundarende-missnojd-kund.txt` (Karin Andersson, korsbandsskada).
 
 ---
 
-## 3. Veterinärutlåtande-tolkaren
+## 2. Veterinärutlåtande-tolkaren
 
 **Vad gör den:** Strukturerar veterinärutlåtanden och kollar mot villkor.
 
-**Namn:** `Veterinärutlåtande-tolkaren`
+**Namn:** `Sveland — Veterinärutlåtande-tolkaren`
 
 **Beskrivning:**
 Strukturerar veterinärutlåtanden, kollar mot villkor och flaggar risker.
@@ -122,11 +88,11 @@ Bifoga `utlatande-arende-2025-4445.pdf` (eller HTML-versionen) och säg:
 
 ---
 
-## 4. Veckorapport-genereraren
+## 3. Veckorapport-genereraren
 
 **Vad gör den:** Tar fram veckorapport från data.
 
-**Namn:** `Veckorapport-genereraren`
+**Namn:** `Sveland — Veckorapport-genereraren`
 
 **Beskrivning:**
 Skriver veckorapport med insikter och åtgärdsförslag från siffer- eller textdata.
@@ -159,11 +125,11 @@ Bifoga `sveland-skadedata-q1-2025.xlsx` och säg:
 
 ---
 
-## 5. Klagomålsmönster-analytikern
+## 4. Klagomålsmönster-analytikern
 
 **Vad gör den:** Hittar mönster i kundkommentarer och korsar mot ärendedata.
 
-**Namn:** `Klagomålsmönster-analytikern`
+**Namn:** `Sveland — Klagomålsmönster-analytikern`
 
 **Beskrivning:**
 Analyserar kundkommentarer och identifierar mönster med konkreta åtgärdsförslag.
@@ -196,16 +162,52 @@ Bifoga `sveland-skadedata-q1-2025.xlsx` och säg:
 
 ---
 
+## 5. Mötesförberedaren
+
+**Vad gör den:** Tar ett kommande möte och returnerar förberedelse-brief.
+
+**Namn:** `Sveland — Mötesförberedaren`
+
+**Beskrivning:**
+Hjälper dig komma förberedd till möten genom att läsa in inbjudan och relevant historik.
+
+**Instruktion:**
+```
+Du är en mötesförberedare som hjälper användaren komma förberedd till möten.
+
+När användaren delar en mötesinbjudan eller agenda ska du:
+1. Sammanfatta vad mötet handlar om i max 3 meningar
+2. Lista deltagarna och deras roller om det går att utläsa
+3. Identifiera 3 frågor användaren bör ha förberedda inför mötet
+4. Föreslå tidigare dokument, mejl eller protokoll som kan vara värda att läsa innan
+5. Avsluta med en kort "vad du ska säga om de frågar dig om..."
+
+Använd alltid Svelands ton:
+- Skriv direkt och varmt, undvik försäkringsformell jargong
+- Använd du-tilltal till användaren
+- Var konkret, inga svävande råd
+
+Var ärlig: om du saknar information för att svara bra, säg det istället för
+att gissa.
+```
+
+**Knowledge att peka på:**
+- Eventuella SharePoint-mappar med mötesprotokoll
+- Inget krav, agenten kan funka även utan extern kunskap
+
+**Demo-prompt under sessionen:**
+*"Jag har ett möte imorgon med skadeenheten om handläggningstider. Här är agendan: [klistra in agenda du skapat live, eller skapa fritt på plats]."*
+
+---
+
 ## Tips inför sessionen
 
 - **Bygg och testa minst en dag innan** — agenter kan vara segare att svara
   första gångerna efter aktivering
 - **Spara skärmbild av varje agents instruktion** — om något fail:ar live kan du
   visa instruktionen istället
-- **Demo-ordning:** börja med #2 eller #4 (mest Sveland-vardag), avsluta med #1
-  (mötesagent, mest "wow" för chefer)
 - **Backup-plan:** om agenten är seg, klistra in samma instruktion i Copilot Chat
   istället och be om svaret där. Skillnaden är just att en sparad agent kan
   återanvändas och delas
-- **Sätt namn enligt mönster** så de syns tillsammans: `Sveland — Mötesförberedaren`,
-  `Sveland — Skadeärende-bedömaren`, osv.
+- **Sätt namn enligt mönster** så de syns tillsammans: alla prefixade med
+  `Sveland — `
