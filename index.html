@@ -1186,18 +1186,22 @@ största risk om AI gör fel.</div>
                     </div>
                     <p class="exercise-intro">Innan vi börjar bygga själva &mdash; en kort diskussion i helgrupp om ramarna. Vad ska vi <em>inte</em> överlåta till AI, och vad behöver vi tänka på kring säkerhet och GDPR när vi börjar bygga och dela agenter? Cirka 10&ndash;15 min.</p>
 
-                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Tre frågor att diskutera tillsammans</h4>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 12px;">
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Fyra frågor att diskutera tillsammans</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #7A4864;">
-                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">1. Var går gränsen?</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">1. När agent, när bara Copilot Chat?</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Allt behöver inte vara en agent. När gör det skillnad att bygga en sparad agent jämfört med att bara fråga Copilot Chat? Och vad är tecken på att en idé <em>inte</em> bör bli agent?</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #7A4864;">
+                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">2. Var går gränsen?</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Vilka beslut eller uppgifter ska <em>aldrig</em> en agent fatta själv i Svelands vardag? Vad är skillnaden mellan att <em>förbereda</em> ett beslut och att <em>fatta</em> det?</p>
                         </div>
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #7A4864;">
-                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">2. Vem ser vad?</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">3. Vem ser vad?</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">När du bygger en agent och pekar på en SharePoint-mapp som kunskap &mdash; vad får agenten <em>egentligen</em> tillgång till? Och vem kan använda agenten om du delar den?</p>
                         </div>
                         <div style="background: #FFF6F0; padding: 18px 20px; border-radius: 10px; border-left: 4px solid #7A4864;">
-                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">3. Känsliga personuppgifter</div>
+                            <div style="font-size: 13px; font-weight: 700; color: #7A4864; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">4. Känsliga personuppgifter</div>
                             <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Personnummer, medicinska detaljer, ekonomi: vad gäller när du bygger agenter som rör kunder, kollegor eller djurägare? Hur skiljer det sig från Copilot Chat?</p>
                         </div>
                     </div>
@@ -1205,6 +1209,8 @@ största risk om AI gör fel.</div>
                     <div class="note-box warning" style="margin-top: 20px;">
                         <strong>Korta sammanfattningar att ta med sig:</strong>
                         <ul style="margin-top: 8px; margin-bottom: 0;">
+                            <li><strong>Bygg agent när:</strong> uppgiften är återkommande, har tydlig struktur, har samma typ av indata varje gång, och resultatet ska delas eller upprepas. Ju oftare du gör det, desto större värde i en sparad agent.</li>
+                            <li><strong>Bygg <em>inte</em> agent när:</strong> uppgiften är engångs, känns prestigefylld men inte återkommer, eller när Copilot Chat redan löser det på 30 sekunder. En agent som används en gång är bara en omväg.</li>
                             <li>Agenter <em>förbereder</em>. Människor <em>beslutar</em>. Aldrig tvärtom.</li>
                             <li>Inom Svelands Microsoft-miljö gäller era befintliga behörigheter. En agent kan bara nå det du själv kan nå, men <em>alla som du delar agenten med</em> kommer åt samma kunskapsbas.</li>
                             <li>Personnummer, löner och medicinska detaljer hör inte hemma i agentens kunskapsbas om den ska delas brett. Bygg agenten utan personuppgifter, eller håll den privat.</li>
