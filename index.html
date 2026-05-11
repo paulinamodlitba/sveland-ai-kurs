@@ -1113,12 +1113,11 @@ största risk om AI gör fel.</div>
                     <p style="margin-bottom: 16px;">Tema: Agenter i din vardag. <strong>OBS: bara 2,5 timme: vi börjar punktligt.</strong> Vi bygger på era önskemål från enkäten: mer demo, mer inspiration, mer konkreta agent-exempel, mindre grupparbete och tydligare ramar för säker användning.</p>
                     <ol style="padding-left: 20px; color: #411B38;">
                         <li><strong>Välkomst + dela hemläxa i grupper om fyra</strong></li>
-                        <li><strong>Demo: Vad är en agent + fem agentexempel från Sveland-vardagen</strong></li>
+                        <li><strong>Demo: Vad är en agent + åtta agentexempel från Sveland-vardagen</strong></li>
                         <li><strong>Diskussion: Vad ska AI <em>inte</em> användas till + säker användning</strong></li>
                         <li>Paus</li>
-                        <li><strong>Övning 1: Hitta ditt eget agent-case</strong> (kort individuell + gruppval)</li>
-                        <li><strong>Övning 2: Bygg gruppens agent</strong> (hands-on i grupp)</li>
-                        <li><strong>Övning 3: Bygg din personliga AI-coach</strong> (individuellt)</li>
+                        <li><strong>Övning 1: Spåna och bygg gruppens agent</strong> (hands-on i grupp)</li>
+                        <li><strong>Övning 2: Bygg din personliga AI-coach</strong> (individuellt)</li>
                         <li>Slutuppgift + avslutning</li>
                     </ol>
                 </div>
@@ -1136,24 +1135,40 @@ största risk om AI gör fel.</div>
                 <div class="exercise" style="border-left: 6px solid #D68D6C;">
                     <div class="exercise-header">
                         <span class="exercise-number" style="background: linear-gradient(135deg, #D68D6C 0%, #C87C5C 100%);">&#128187;</span>
-                        <span class="exercise-title">Demo: Vad är en agent + fem agentexempel från Sveland-vardagen</span>
+                        <span class="exercise-title">Demo: Vad är en agent + åtta agentexempel från Sveland-vardagen</span>
                     </div>
                     <p class="exercise-intro">Paulina visar live, ni tittar. <strong>Bara titta &mdash; ingen hands-on.</strong> Cirka 25&ndash;30 min totalt. Mål: ni ska se bredden av vad en agent kan göra i Sveland-vardagen, plus förstå skillnaden mellan Copilot Chat och en sparad agent.</p>
 
                     <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Det här ser du i demon</h4>
                     <ol>
                         <li><strong>Snabb genomgång av Agent Builder:</strong> var den finns, två sätt att bygga (Beskriv-läget vs Konfigurera-läget), färdiga mallar som genväg.</li>
-                        <li><strong>Åtta agenter byggda och redo att köras:</strong>
-                            <ul>
-                                <li><strong>Skadeärende-bedömaren</strong> &mdash; tar inkommande mejl, korsar mot villkor, föreslår preliminär bedömning och tonläge</li>
-                                <li><strong>Veterinärutlåtande-tolkaren</strong> &mdash; strukturerar utlåtanden, korsar mot villkor, flaggar oklarheter</li>
-                                <li><strong>Veckorapport-genereraren</strong> &mdash; tar data, skriver utkast till veckorapport med insikter och åtgärder</li>
-                                <li><strong>Klagomålsmönster-analytikern</strong> &mdash; hittar mönster i kundkommentarer, korsar mot ärendedata, föreslår åtgärder</li>
-                                <li><strong>Mötesförberedaren</strong> &mdash; tar en mötesinbjudan, ger förberedelse-brief med relevanta frågor</li>
-                                <li><strong>Mötes-uppföljaren</strong> &mdash; tar Teams-protokoll, skapar bevakningslista för Planner, uppföljningsmejl och kalender-påminnelser</li>
-                                <li><strong>Inkorgs-prioriteraren</strong> &mdash; läser dina senaste mejl, korsar med kalendern, prioriterar vad du ska svara på och när</li>
-                                <li><strong>Åtgärds-extraheraren</strong> &mdash; tar fritext (mejl, dokument, anteckningar) och förbereder en strukturerad bevakningslista för Planner. Kan kedjas med Copilot-i-Planner för automatisk uppgiftsskapande.</li>
-                            </ul>
+                        <li><strong>Åtta agenter byggda och redo att köras</strong>, grupperade efter användningsområde:
+
+                            <div style="margin-top: 12px;">
+                                <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px; margin-bottom: 6px;">Skadehantering</div>
+                                <ul style="margin-top: 4px;">
+                                    <li><strong>Skadeärende-bedömaren</strong>: bedömer inkommande ärenden mot villkor och föreslår tonläge för svar</li>
+                                    <li><strong>Veterinärutlåtande-tolkaren</strong>: strukturerar utlåtanden och flaggar oklarheter</li>
+                                </ul>
+
+                                <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 14px; margin-bottom: 6px;">Rapportering &amp; analys</div>
+                                <ul style="margin-top: 4px;">
+                                    <li><strong>Veckorapport-genereraren</strong>: tar data och skriver utkast med insikter och åtgärder</li>
+                                    <li><strong>Klagomålsmönster-analytikern</strong>: hittar mönster i kundkommentarer och föreslår åtgärder</li>
+                                </ul>
+
+                                <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 14px; margin-bottom: 6px;">Möten &amp; vardag</div>
+                                <ul style="margin-top: 4px;">
+                                    <li><strong>Mötesförberedaren</strong>: ger förberedelse-brief med relevanta frågor inför ett möte</li>
+                                    <li><strong>Mötes-uppföljaren</strong>: tar protokoll och skapar bevakningslista, uppföljningsmejl och påminnelser</li>
+                                    <li><strong>Inkorgs-prioriteraren</strong>: läser senaste mejlen och föreslår vad du ska svara på och när</li>
+                                </ul>
+
+                                <div style="font-size: 13px; font-weight: 700; color: #C87C5C; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 14px; margin-bottom: 6px;">Generell</div>
+                                <ul style="margin-top: 4px;">
+                                    <li><strong>Åtgärds-extraheraren</strong>: tar fritext (mejl, dokument, anteckningar) och förbereder en bevakningslista för Planner. Kan kedjas med Copilot i Planner för automatisk uppgiftsskapande.</li>
+                                </ul>
+                            </div>
                         </li>
                         <li><strong>Varje agent demonstreras med en riktig prompt</strong> så ni ser att Copilot inte är magi. Bra utdata kräver bra ingång.</li>
                     </ol>
@@ -1190,7 +1205,7 @@ största risk om AI gör fel.</div>
                     <div class="note-box warning" style="margin-top: 20px;">
                         <strong>Korta sammanfattningar att ta med sig:</strong>
                         <ul style="margin-top: 8px; margin-bottom: 0;">
-                            <li>Agenter <em>förbereder</em> &mdash; människor <em>beslutar</em>. Aldrig tvärtom.</li>
+                            <li>Agenter <em>förbereder</em>. Människor <em>beslutar</em>. Aldrig tvärtom.</li>
                             <li>Inom Svelands Microsoft-miljö gäller era befintliga behörigheter. En agent kan bara nå det du själv kan nå, men <em>alla som du delar agenten med</em> kommer åt samma kunskapsbas.</li>
                             <li>Personnummer, löner och medicinska detaljer hör inte hemma i agentens kunskapsbas om den ska delas brett. Bygg agenten utan personuppgifter, eller håll den privat.</li>
                             <li>Bygg alltid in en faktagranskning-påminnelse i agenten.</li>
@@ -1198,38 +1213,22 @@ största risk om AI gör fel.</div>
                     </div>
                 </div>
 
-                <!-- ÖVNING 1: HITTA DITT EGET AGENT-CASE -->
+                <!-- ÖVNING 1: SPÅNA OCH BYGG GRUPPENS AGENT -->
                 <div class="exercise" style="border-left: 6px solid #C87C5C;">
                     <div class="exercise-header">
                         <span class="exercise-number" style="background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%);">1</span>
-                        <span class="exercise-title">Hitta ditt eget agent-case</span>
+                        <span class="exercise-title">Spåna och bygg gruppens agent</span>
                     </div>
-                    <p class="exercise-intro">Innan vi bygger gemensamt: var och en tänker tyst i 5 minuter på en återkommande uppgift i sin egen vardag som skulle passa en agent. Sen samlar gruppen idéerna och väljer en att bygga tillsammans i nästa övning. Cirka 10 min totalt.</p>
+                    <p class="exercise-intro">Ni bygger en agent <em>tillsammans</em> i gruppen, från idé till färdig agent. Första delen är att spåna fram ett bra case, andra delen är att bygga. Vi använder <strong>Copilot Agent Builder</strong>, den enklare som finns inbyggd i Copilot 365 (inte Copilot Studio). Ingen kod, bara naturligt språk. <strong>Arbetssätt:</strong> en gemensam agent per grupp. Cirka 45 min totalt.</p>
 
-                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Så här gör du</h4>
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Del 1: Hitta ert agent-case (~10 min)</h4>
                     <ol>
-                        <li><strong>5 min individuell reflektion.</strong> Tänk på en uppgift du gör <em>ofta</em> där en agent skulle göra störst skillnad. Bra tecken:
-                            <ul>
-                                <li>Du gör samma sak om och om igen</li>
-                                <li>Du måste klicka mellan flera dokument eller system</li>
-                                <li>Det tar längre tid än det egentligen borde</li>
-                                <li>Det är mentalt tungt utan att vara intellektuellt utmanande</li>
-                            </ul>
-                            Skriv ner i 1&ndash;2 meningar: <em>"Den här agenten skulle hjälpa mig med X genom att läsa Y och returnera Z."</em>
-                        </li>
-                        <li><strong>5 min i grupp om fyra:</strong> dela kort era idéer. Välj en av de fyra (eller en kombination) att bygga tillsammans i nästa övning. Välj det case ni tror ger mest värde att utforska tillsammans &mdash; gärna något som korsar minst två källor.</li>
+                        <li><strong>Dela idéer i gruppen.</strong> Varje deltagare nämner en återkommande uppgift där en agent skulle göra skillnad. Bra tecken: ni gör samma sak om och om igen, ni klickar mellan flera dokument eller system, det tar längre tid än det egentligen borde, eller det är mentalt tungt utan att vara intellektuellt utmanande.</li>
+                        <li><strong>Välj ett case tillsammans.</strong> Plocka det som flera relaterar till och som gärna använder information från minst två källor (Outlook, SharePoint, Excel, OneDrive, Teams). Det blir er agent för dagen.</li>
+                        <li><strong>Formulera en mening om vad agenten ska göra:</strong> <em>"Den här agenten ska hjälpa oss med X genom att läsa Y och returnera Z."</em></li>
                     </ol>
-                </div>
 
-                <!-- ÖVNING 2: BYGG GRUPPENS AGENT -->
-                <div class="exercise" style="border-left: 6px solid #C87C5C;">
-                    <div class="exercise-header">
-                        <span class="exercise-number" style="background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%);">2</span>
-                        <span class="exercise-title">Bygg gruppens agent i Copilot Agent Builder</span>
-                    </div>
-                    <p class="exercise-intro">Nu blir det verkligt. Ni bygger en agent <em>tillsammans</em> i gruppen för det case ni valde i övning 1. Vi använder <strong>Copilot Agent Builder</strong>, den enklare som finns inbyggd i Copilot 365 (inte Copilot Studio). Ingen kod, bara naturligt språk. <strong>Arbetssätt:</strong> en gemensam agent per grupp. Cirka 30&ndash;35 min.</p>
-
-                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Så bygger ni</h4>
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Del 2: Bygg agenten (~30 min)</h4>
                     <p style="margin-bottom: 12px;">En person delar skärm i gruppen och kör tangentbordet, men alla deltar i diskussionen. Byt gärna förare halvvägs.</p>
                     <ol>
                         <li><strong>Öppna Agent Builder.</strong> I Copilot Chat: klicka <em>Skapa agent</em> uppe till höger. (Det är inte Copilot Studio, som är mer avancerad och kräver separata licenser.) <em>Tips:</em> Under <em>Konfigurera &rarr; Mall</em> finns färdiga mallar (Skrivcoachen, Mötescoach, Inlärningscoachen m.fl.) som ni kan utgå från istället för att börja från noll.</li>
@@ -1246,10 +1245,10 @@ största risk om AI gör fel.</div>
                     </div>
                 </div>
 
-                <!-- ÖVNING 3: BYGG DIN COACH-AGENT -->
+                <!-- ÖVNING 2: BYGG DIN COACH-AGENT -->
                 <div class="exercise" style="border-left: 6px solid #C87C5C;">
                     <div class="exercise-header">
-                        <span class="exercise-number" style="background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%);">3</span>
+                        <span class="exercise-number" style="background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%);">2</span>
                         <span class="exercise-title">Bygg din personliga AI-coach och få din fortsättningsplan</span>
                     </div>
                     <p class="exercise-intro">Nu bygger var och en sin egen agent. En personlig AI-coach som hjälper dig fortsätta lära dig AI på Sveland efter kursen. Du använder den direkt för att få din 30-dagarsplan, och har sedan en agent kvar att gå tillbaka till. <strong>Arbetssätt:</strong> individuellt, men ni sitter kvar i samma grupprum så ni kan bolla en formulering eller fråga om någon fastnar.</p>
@@ -1266,6 +1265,10 @@ Din roll:
 - Föreslå AI-användningsområden som passar min roll och min vardag
 - Påminn mig alltid om faktagranskning, GDPR och säker AI-användning
 - Coacha snarare än ge färdiga svar, ställ följdfrågor när det behövs
+- När jag bestämt mig för en plan: formatera den som en todolista
+  redo att läggas in i Microsoft Planner, med titel, ungefärlig
+  deadline (dagar eller veckor framåt) och en kort beskrivning per
+  uppgift
 
 Min kontext:
 - Roll: [din titel, t.ex. teamledare skadehantering]
@@ -1289,7 +1292,11 @@ Min kontext:
                         <li><strong>Be om kritisk feedback:</strong>
                             <div class="code-block">Är den här planen realistisk för min vardag? Vilka fallgropar ser du? Vad saknas?</div>
                         </li>
-                        <li><strong>Justera</strong> tills du har en plan du faktiskt vill följa. Spara den. Återkom till coachen om en vecka.</li>
+                        <li><strong>Justera</strong> tills du har en plan du faktiskt vill följa.</li>
+                        <li><strong>Be om Planner-todolista:</strong>
+                            <div class="code-block">Skapa nu en todolista i Planner-format från min plan, med titel, ungefärlig deadline och kort beskrivning per uppgift. Optimera den att klistras in i Copilot-i-Planner.</div>
+                            <p style="font-size: 14px; color: #7A4864; margin-top: 8px; margin-bottom: 0;"><em>Klistra in svaret i Copilot-i-Planner-prompten så skapas uppgifterna automatiskt (kräver Premium-plan). Annars: lägg in dem manuellt i din valda plan.</em></p>
+                        </li>
                     </ol>
 
                     <div class="note-box" style="margin-top: 20px;">
@@ -1305,7 +1312,7 @@ Min kontext:
                     <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Vad ska du bygga agent för?</h4>
                     <ul>
                         <li><strong>Återkommande uppgifter med tydlig struktur:</strong> uppgifter du gör om och om igen, där du varje gång gör ungefär samma sak och vill ha samma typ av resultat.</li>
-                        <li><strong>Uppgifter som korsar flera källor:</strong> där du normalt behöver klicka mellan flera dokument eller system för att få en helhetsbild.</li>
+                        <li><strong>Uppgifter som väver ihop flera källor:</strong> där du normalt behöver klicka mellan flera dokument eller system för att få en helhetsbild.</li>
                         <li><strong>Uppgifter där tonen och formatet är viktiga:</strong> där en mall sparar tid och säkerställer kvalitet.</li>
                     </ul>
 
@@ -1341,7 +1348,6 @@ Min kontext:
                                 <li><em>Teams-kanaler:</em> tidigare diskussioner och möten med transkribering</li>
                             </ul>
                             Peka bara på det agenten faktiskt behöver. Mer kunskap blir snabbt sämre, inte bättre.
-                            <p style="margin-top: 10px; margin-bottom: 0; font-size: 14px; color: #7A4864;"><em><strong>Begränsning för SharePoint:</strong> Agent Builder accepterar URL:er max två nivåer ner i strukturen. Om du försöker peka på en djupare länkad mapp får du felmeddelandet att URL:en är för djupt länkad &mdash; peka i stället på huvudwebbplatsen (t.ex. <code>https://sveland.sharepoint.com/sites/skadeprocesser</code>) så får agenten tillgång till hela platsen enligt Copilots behörighetsregler. <a href="https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites#agent-capabilities-and-licensing-models" target="_blank" rel="noopener">Microsofts dokumentation</a>.</em></p>
                         </li>
                         <li><strong>Testa minst tre gånger.</strong> Olika scenarier, olika indata. Blir resultatet konsekvent? Sjunker kvaliteten någonstans?</li>
                         <li><strong>Justera instruktionen</strong> tills agenten gör det du vill. Vanlig fix: lägg till ett exempel direkt i instruktionen.</li>
