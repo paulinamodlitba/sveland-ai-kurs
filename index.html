@@ -1307,6 +1307,90 @@ Min kontext:
                     </div>
                 </div>
 
+                <!-- BYGGA EGNA AGENTER -->
+                <div class="card" style="margin-top: 32px;">
+                    <h3>Bygga egna agenter efter kursen</h3>
+                    <p style="margin-bottom: 16px;">När du börjar bygga agenter i din egen vardag jobbar du med <em>riktig</em> data, inte kursens fiktiva filer. Här är en kort guide som hjälper dig komma igång.</p>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Vad ska du bygga agent för?</h4>
+                    <ul>
+                        <li><strong>Återkommande uppgifter med tydlig struktur:</strong> uppgifter du gör om och om igen, där du varje gång gör ungefär samma sak och vill ha samma typ av resultat.</li>
+                        <li><strong>Uppgifter som korsar flera källor:</strong> där du normalt behöver klicka mellan flera dokument eller system för att få en helhetsbild.</li>
+                        <li><strong>Uppgifter där tonen och formatet är viktiga:</strong> där en mall sparar tid och säkerställer kvalitet.</li>
+                    </ul>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 20px; margin-bottom: 10px;">Vad ska du <em>inte</em> bygga agent för?</h4>
+                    <ul>
+                        <li><strong>Engångsuppgifter</strong> där en vanlig Copilot Chat räcker.</li>
+                        <li><strong>Beslut som kräver yrkesbedömning</strong> (medicinsk, juridisk, ekonomisk). Agenten kan ge utkast, men du fattar beslutet.</li>
+                        <li><strong>Uppgifter med känsliga personuppgifter</strong> som personnummer, löner eller medicinska detaljer, om du inte är säker på hur agenten delas och var datan hamnar.</li>
+                    </ul>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Steg för steg, mot din riktiga data</h4>
+                    <ol>
+                        <li><strong>Beskriv vad agenten ska göra i en mening.</strong> Innan du öppnar Agent Builder, formulera: <em>"Den här agenten ska hjälpa mig med X genom att läsa Y och returnera Z."</em> Är meningen luddig, är agenten oftast inte redo att byggas än.</li>
+                        <li><strong>Öppna Agent Builder.</strong> I Copilot Chat: <em>Skapa agent</em> uppe till höger.</li>
+                        <li><strong>Skriv instruktionen i fyra delar:</strong>
+                            <ul>
+                                <li><em>Roll:</em> "Du är en X som hjälper användaren med Y på Sveland."</li>
+                                <li><em>Steg:</em> "När användaren delar X ska du: 1) ..., 2) ..., 3) ..."</li>
+                                <li><em>Ton och format:</em> "Använd Svelands ton: rak, varm, undvik försäkringsformell jargong. Skriv som punktlista, max 200 ord."</li>
+                                <li><em>Var ärlig om osäkerhet:</em> "Om du saknar information, fråga användaren i stället för att gissa."</li>
+                            </ul>
+                        </li>
+                        <li><strong>Peka på rätt kunskap.</strong> I din vardag är detta filer som faktiskt finns i din arbetsmiljö:
+                            <ul>
+                                <li><em>Outlook-mejl och kalender:</em> agenten kan läsa din inkorg och dina möten om du tillåter det</li>
+                                <li><em>OneDrive-filer:</em> dina egna dokument och mallar</li>
+                                <li><em>SharePoint-mappar:</em> teamets gemensamma policys, protokoll och mallar</li>
+                                <li><em>Teams-kanaler:</em> tidigare diskussioner och möten med transkribering</li>
+                            </ul>
+                            Peka bara på det agenten faktiskt behöver. Mer kunskap blir snabbt sämre, inte bättre.
+                        </li>
+                        <li><strong>Testa minst tre gånger.</strong> Olika scenarier, olika indata. Blir resultatet konsekvent? Sjunker kvaliteten någonstans?</li>
+                        <li><strong>Justera instruktionen</strong> tills agenten gör det du vill. Vanlig fix: lägg till ett exempel direkt i instruktionen.</li>
+                        <li><strong>Spara med tydligt namn</strong> så du hittar den. Tips: prefix med ditt namn eller team, t.ex. <em>"Skadehantering — Ärendebedömare"</em>.</li>
+                    </ol>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Innan du delar agenten med kollegor</h4>
+                    <div class="note-box warning" style="margin-top: 0;">
+                        <ul style="margin: 0; padding-left: 18px;">
+                            <li>Använder agenten kunskap som dina kollegor också får se? Kontrollera behörigheterna i SharePoint/OneDrive.</li>
+                            <li>Finns det känsliga personuppgifter i kunskapsbasen? Då bör den inte delas brett.</li>
+                            <li>Är instruktionen tydlig om vad agenten <em>inte</em> ska göra? T.ex. fatta beslut åt användaren.</li>
+                            <li>Bygg in en påminnelse om faktagranskning: <em>"Påminn alltid användaren att dubbelkolla siffror och villkorstolkningar."</em></li>
+                        </ul>
+                    </div>
+
+                    <h4 style="font-size: 17px; color: #411B38; margin-top: 24px; margin-bottom: 10px;">Inspiration: agenter du kan bygga i din vardag</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px;">
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Mötesförberedare</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Tar morgondagens Teams-möte, sammanfattar agendan, drar upp relevant historik från tidigare protokoll, föreslår 3 frågor du bör ha förberedda.</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Veckorapport-skrivare</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Drar siffror från ditt vanliga rapport-Excel och skriver veckorapporten i din chefs föredragna format.</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Inkorgs-prioriterare</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Läser dina senaste mejl, grupperar efter ämne och brådska, föreslår vilka du bör svara på före lunch.</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Kundsvars-granskare</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Du klistrar in ett svar du tänker skicka. Agenten kollar mot Svelands kommunikationsriktlinjer och föreslår justeringar.</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Onboardings-coach</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Hjälper en ny kollega navigera i dina policys och rutiner. Svarar på återkommande frågor med rätt källhänvisning.</p>
+                        </div>
+                        <div style="background: #FFF6F0; padding: 14px 18px; border-radius: 10px;">
+                            <div style="font-size: 13px; font-weight: 700; color: #C87C5C; margin-bottom: 4px;">Möten-uppföljaren</div>
+                            <p style="font-size: 14px; color: #411B38; line-height: 1.5; margin: 0;">Läser Teams-protokoll, extraherar åtgärdspunkter med ansvarig och deadline, lägger till påminnelser i din kalender.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- AVSLUTANDE REFLEKTION -->
                 <div class="homework">
                     <h3>Avslutande reflektion: mellan 12 och 22 maj</h3>
