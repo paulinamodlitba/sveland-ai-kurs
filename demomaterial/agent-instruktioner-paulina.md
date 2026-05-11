@@ -8,6 +8,15 @@ Demo-flödet: visa agenterna i ordning, gärna med några sekunders introtext
 mellan varje ("Den här agenten är till för...") så deltagarna ser bredden
 av vad man kan göra.
 
+**Genväg:** Under *Konfigurera → Mall* finns färdiga mallar (Skrivcoachen,
+Mötescoach, Promptcoachen, Inlärningscoachen, Assistent för kundinsikter
+m.fl.) som du kan utgå från och anpassa. Snabbare än att börja från tomt
+blad. För agenterna nedan är detta relevant:
+- **Mötesförberedaren (#5):** starta från *Mötescoach*-mallen och anpassa
+- **Klagomålsmönster-analytikern (#4):** starta från *Assistent för
+  kundinsikter* om den ger bra grund
+- Övriga: börja från tomt blad eftersom de är mer Sveland-specifika.
+
 Ordningen nedan är samma som demo-ordningen: börjar i kärnvardag
 (skadeärende), går genom specialist- och chefsperspektiv, och avslutar
 med mötesförberedaren som "wow"-final.
