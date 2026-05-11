@@ -533,7 +533,7 @@ en strukturerad åtgärdslista i Planner-format. Kan kedjas med
 Copilot i Planner för att skapa uppgifterna direkt.
 
 Namn:
-  Sveland — Åtgärds-extraheraren
+  Sveland — Planner-konverteraren
 
 Beskrivning:
   Omvandlar mejl, dokument, anteckningar eller fritext till en
@@ -619,7 +619,7 @@ Demo-prompt under sessionen:
   strategidokumentet?"
 
 KEDJA MED COPILOT I PLANNER:
-1. Kör Åtgärds-extraheraren med ditt valda innehåll
+1. Kör Planner-konverteraren med ditt valda innehåll
 2. Kopiera textblocket från Format B (optimerat för Planner-Copilot)
 3. Öppna din Planner-plan, klicka Copilot-ikonen
 4. Klistra in textblocket — Copilot-i-Planner skapar uppgifterna
