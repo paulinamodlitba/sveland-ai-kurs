@@ -477,7 +477,7 @@ Var ärlig: om du saknar information för att svara bra, säg det istället för
                     <span class="agent-number">6</span>
                     <span class="agent-summary-text">
                         Mötes-uppföljaren
-                        <span class="agent-summary-tagline">Tar Teams-protokoll och skapar bevakningslista för Planner, uppföljningsmejl och påminnelser.</span>
+                        <span class="agent-summary-tagline">Tar Teams-protokoll och ger en färdig Planner-prompt samt förslag på uppföljningsmejl.</span>
                     </span>
                     <span class="agent-chevron">&#9662;</span>
                 </summary>
@@ -492,7 +492,7 @@ Var ärlig: om du saknar information för att svara bra, säg det istället för
                             <span>Fri prompt (Beskriv-läget)</span>
                             <button class="copy-btn" data-copy-target="agent6-fri">Kopiera</button>
                         </div>
-                        <div class="prompt-block" id="agent6-fri">Bygg en agent som hjälper mig följa upp möten. När jag delar en transkribering eller anteckningar från ett Teams-möte ska agenten extrahera åtgärdspunkter med ansvarig roll och deadline, formatera dem som bevakningslista redo att läggas in i Planner, skapa förslag på uppföljningsmejl till deltagarna, och föreslå kalender-påminnelser för viktiga deadlines. Ge mig också en kort sammanfattning av vad mötet beslutade och vad som lämnades öppet till nästa möte. Svelands ton: direkt, varm, konkret.</div>
+                        <div class="prompt-block" id="agent6-fri">Bygg en agent som hjälper mig följa upp möten. När jag delar en transkribering eller anteckningar från ett Teams-möte ska agenten ge mig: 1) en kort sammanfattning av vad mötet beslutade och vad som lämnades öppet till nästa möte, 2) EN färdig prompt jag kan klistra in i Copilot-i-Planner för att skapa alla uppgifter automatiskt, och 3) ett förslag på uppföljningsmejl till deltagarna. Planner-prompten ska börja med "Skapa följande uppgifter i [planens namn]:" och lista uppgifter med titel, tilldelad roll, deadline och kort beskrivning. Svelands ton: direkt, varm, konkret.</div>
                     </div>
 
                     <div class="agent-section">
@@ -504,10 +504,23 @@ Var ärlig: om du saknar information för att svara bra, säg det istället för
 
 1. Sammanfatta vad mötet beslutade i max 3 punkter
 2. Lista vad som lämnades öppet till nästa möte
-3. Extrahera åtgärdspunkter med tre kolumner: vad, ansvarig roll (inte personnamn om du inte vet säkert), deadline
-4. Formatera åtgärdspunkterna som en bevakningslista redo att läggas in i Microsoft Planner: en rad per uppgift med titel, tilldelad roll, datum och en kort beskrivning. Ge tydlig instruktion: "Kopiera in dessa rader som nya uppgifter i Planner."
-5. Föreslå ett kort uppföljningsmejl till deltagarna med åtgärdspunkterna och en deadline för bekräftelse
-6. Föreslå kalender-påminnelser för deadlines som är längre fram än 5 dagar
+3. Identifiera uppgifter som behöver göras: vad, tilldelad roll (inte personnamn om du inte vet säkert), deadline, kort beskrivning
+4. Fråga användaren vilken Planner-plan uppgifterna ska skapas i (om det inte redan är angivet)
+5. Returnera EN färdig prompt som användaren kan klistra direkt in i Copilot-i-Planner:
+
+"Skapa följande uppgifter i [planens namn]:
+
+1. [Titel uppgift 1]
+   Tilldelad: [roll]. Deadline: [datum]. Beskrivning: [1-2 meningar]
+
+2. [Titel uppgift 2]
+   Tilldelad: [roll]. Deadline: [datum]. Beskrivning: [1-2 meningar]
+
+..."
+
+Förklara att användaren bara behöver kopiera detta block och klistra in det i Copilot-i-Planner-prompten i sin plan.
+
+6. Föreslå ett kort uppföljningsmejl till deltagarna med uppgifterna och en deadline för bekräftelse
 
 Använd Svelands ton: direkt, varm, konkret. Skriv för någon som har en lång arbetsdag, inte 30 minuter att läsa.
 
@@ -529,14 +542,14 @@ Om något i transkriberingen är otydligt, flagga det istället för att gissa.<
                             <span>Välkomstmeddelande</span>
                             <button class="copy-btn" data-copy-target="agent6-welcome">Kopiera</button>
                         </div>
-                        <div class="prompt-block welcome-block" id="agent6-welcome">Hej! Klistra in en mötestranskribering eller dina anteckningar så strukturerar jag åtgärdspunkter som bevakningslista för Planner, föreslår uppföljningsmejl och hjälper dig hålla deadlines i sikte.</div>
+                        <div class="prompt-block welcome-block" id="agent6-welcome">Hej! Klistra in en mötestranskribering eller dina anteckningar så ger jag dig en sammanfattning, EN färdig prompt för Copilot-i-Planner (alla uppgifter skapas automatiskt) och förslag på uppföljningsmejl.</div>
                     </div>
 
                     <div class="agent-section">
                         <div class="agent-section-label">Startprompter</div>
                         <div class="starter-prompts">
-                            <div class="starter-prompt">Sammanfatta beslut och åtgärdspunkter från det här mötet</div>
-                            <div class="starter-prompt">Skapa bevakningslista för Planner från åtgärdspunkterna</div>
+                            <div class="starter-prompt">Sammanfatta beslut och uppgifter från det här mötet</div>
+                            <div class="starter-prompt">Skapa Planner-prompt från mötesanteckningarna</div>
                             <div class="starter-prompt">Skriv ett uppföljningsmejl till deltagarna</div>
                         </div>
                     </div>
