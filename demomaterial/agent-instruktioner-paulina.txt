@@ -10,10 +10,11 @@ Demo-flödet: visa agenterna i ordning, gärna med några sekunders
 introtext mellan varje ("Den här agenten är till för...") så
 deltagarna ser bredden av vad man kan göra.
 
-GENVÄG: Under Konfigurera → Mall finns färdiga mallar (Skrivcoachen,
-Mötescoach, Promptcoachen, Inlärningscoachen, Assistent för
-kundinsikter m.fl.) som du kan utgå från och anpassa. Snabbare än att
-börja från tomt blad. För agenterna nedan är detta relevant:
+GENVÄG: Agent Builder har färdiga mallar du kan utgå från
+(Skrivcoachen, Mötescoach, Promptcoachen, Inlärningscoachen, Assistent
+för kundinsikter m.fl.). De ligger ofta i anslutning till
+promptfönstret. Snabbare än att börja från tomt blad. För agenterna
+nedan är detta relevant:
   - Mötesförberedaren (#5): starta från Mötescoach-mallen och anpassa
   - Klagomålsmönster-analytikern (#4): starta från Assistent för
     kundinsikter om den ger bra grund
@@ -807,6 +808,76 @@ När fungerar det här? När du redan vet ungefär vad du vill ha och
 kan beskriva det. Om du istället har rörig indata (ett långt mejl,
 ett strategidokument, möteanteckningar) som behöver struktureras
 först — då är Planner-konverteraren (agent 8) bättre som mellansteg.
+
+
+DEMO-SCENARIO: FRÅN STRATEGI TILL PLANNER-PLAN (SOME-TILLVÄXT 50%)
+
+Det här är ett kraftfullt scenario som knyter ihop två steg:
+ett strategidokument som kontext → strukturerad output → in i Planner
+via Copilot-i-Planner. Visar att samma byggstenar (agent + Planner-
+prompt + automatiska uppgifter) fungerar oavsett om input är ett möte
+eller en strategi.
+
+Förberedelse: ha strategidokumentet "strategiplan-2025-2030" (eller
+motsvarande Sveland-strategi) tillgängligt att bifoga i Copilot
+Chat. Kör i Copilot-agenter (Frontier) — där har modellen tillgång
+till Planner som verktyg och kan skapa planen direkt från chatten.
+
+Steg 1: Öppna Copilot Chat, växla till Frontier-läget (Copilot-
+agenter). Bifoga strategidokumentet. Klistra in prompten:
+
+  Du är strateg och planeringsexpert. Utifrån den bifogade
+  strategiplanen (2025-2030) ska du bygga en konkret 12-månadersplan
+  för hur Sveland Djurförsäkring ökar synligheten i sociala medier
+  med 50% mätt i räckvidd och engagemang.
+
+  Planen ska täcka fyra kanaler:
+  - Instagram
+  - LinkedIn
+  - Facebook
+  - GEO (Generative Engine Optimization — synlighet i AI-svar
+    från ChatGPT, Perplexity, Google AI Overviews)
+
+  För varje kanal: bryt ner i 4-6 konkreta initiativ per kvartal.
+  Varje initiativ ska ha:
+  - Tydlig beskrivning (1-2 meningar)
+  - Ansvarig roll (inte personnamn)
+  - Deadline (kvartal + månad)
+  - KPI med startvärde (om det går att läsa ur strategin) och målvärde
+  - Beroenden till andra initiativ om det finns
+
+  Output: Skapa en ny Plan i Planner för detta. Lägg till följande
+  uppgifter, fördelade i buckets per kanal (Instagram, LinkedIn,
+  Facebook, GEO):
+
+  - [Uppgiftsnamn]: [beskrivning]. Bucket: [kanal].
+    Förfallodatum: [datum]. Etikett: [kvartal].
+    Checklista: [KPI startvärde -> KPI mål], [eventuella beroenden].
+
+Steg 2: Frontier-agenten läser strategin, föreslår plan-struktur
+(namn, buckets, första uppgifterna) och frågar om den ska skapa
+planen. Granska och godkänn med "Kör" eller motsvarande.
+
+Steg 3: Agenten anropar Planner som verktyg och skapar planen.
+Visa uppgifterna landa automatiskt i buckets med deadlines,
+etiketter per kvartal och checklistor med KPI:erna.
+
+Pedagogiska poänger att lyfta i demon:
+- "Ansvarig roll, inte personnamn" -> undviker att Copilot hittar på
+  personer som inte finns
+- "Etikett: [kvartal]" istället för att stoppa kvartalet i bucket-
+  namnet -> då kan ni filtrera planen på kvartal i Planner utan att
+  låsa strukturen
+- GEO är värt att stanna en stund vid — försäkringsbranschen kommer
+  märka att Google-trafik delvis ersätts av AI-svar inom 12-18 mån
+- Strategi som kunskap -> planen blir förankrad i något ni redan
+  beslutat, inte fritt påhittad
+
+Varför inte agent? Att gå från strategi till operativ plan är något
+Sveland gör 1-2 ggr/år. Engångsuppgifter är bättre som väl-byggda
+prompter än som agenter. Däremot: om ni vill ha en återkommande
+"Strategi-till-plan-konverteraren" som flera avdelningar kan använda
+— då är det värt att bygga som agent.
 
 ---
 
