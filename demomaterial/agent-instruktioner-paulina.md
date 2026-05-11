@@ -76,6 +76,18 @@ kunden i förslag.
 - `villkor-hundforsakring-bas.docx`
 - `skadehanteringspolicy.docx`
 
+**Välkomstmeddelande:**
+```
+Hej! Jag hjälper dig bedöma skadeärenden mot Svelands villkor. Klistra in
+ett kundärende, mejl eller en beskrivning, så ger jag dig sammanfattning,
+relevant villkorshänvisning och förslag på preliminär bedömning.
+```
+
+**Startprompter:**
+- `Bedöm det här ärendet`
+- `Vilka villkor gäller för operation av korsbandsskada?`
+- `Föreslå tonläge för svar till en upprörd kund`
+
 **Demo-prompt under sessionen:**
 Klistra in innehållet i `kundarende-missnojd-kund.txt` (Karin Andersson, korsbandsskada).
 
@@ -123,6 +135,18 @@ peka istället ut vad som behöver kompletteras.
 **Knowledge:**
 - `villkor-hundforsakring-bas.docx`
 - `skadehanteringspolicy.docx`
+
+**Välkomstmeddelande:**
+```
+Hej! Bifoga ett veterinärutlåtande så strukturerar jag innehållet,
+korsar mot försäkringsvillkoren och flaggar oklarheter eller risker
+som behöver kompletteras.
+```
+
+**Startprompter:**
+- `Tolka det här utlåtandet`
+- `Är skadan ett olycksfall eller sjukdom enligt villkoren?`
+- `Vilka frågor bör jag ställa till veterinären?`
 
 **Demo-prompt:**
 Bifoga `utlatande-arende-2025-4445.pdf` (eller HTML-versionen) och säg:
@@ -172,6 +196,18 @@ Om du saknar information, fråga användaren först istället för att gissa.
 - `sveland-grafisk-profil.txt`
 - Eventuell mall för månadsrapport om sådan finns
 
+**Välkomstmeddelande:**
+```
+Hej! Bifoga din data (Excel, CSV eller text) så skriver jag ett första
+utkast till veckorapport: 3 insikter, 3 trender, 3 åtgärder. Du finputsar
+sedan utkastet och skickar vidare.
+```
+
+**Startprompter:**
+- `Skriv veckorapport från den här datan`
+- `Vilka är de tre viktigaste trenderna?`
+- `Föreslå åtgärder för nästa vecka`
+
 **Demo-prompt:**
 Bifoga `sveland-skadedata-q1-2025.xlsx` och säg:
 *"Skriv en veckorapport baserat på datan."*
@@ -220,6 +256,18 @@ för att överdriva.
 
 **Knowledge:**
 - `sveland-skadedata-q1-2025.xlsx` (Kundnöjdhet-fliken + Skadeärenden-fliken)
+
+**Välkomstmeddelande:**
+```
+Hej! Bifoga kundkommentarer eller nöjdhetsdata så grupperar jag dem i
+teman, korsar mot ärendedata om sådan finns, och hittar de mönster där
+en åtgärd skulle göra störst skillnad.
+```
+
+**Startprompter:**
+- `Analysera de här kommentarerna och hitta mönster`
+- `Vilka teman dominerar bland lågbetygen?`
+- `Föreslå åtgärder baserat på datan`
 
 **Demo-prompt:**
 Bifoga `sveland-skadedata-q1-2025.xlsx` och säg:
@@ -273,6 +321,18 @@ att gissa.
 **Knowledge att peka på:**
 - Eventuella SharePoint-mappar med mötesprotokoll
 - Inget krav, agenten kan funka även utan extern kunskap
+
+**Välkomstmeddelande:**
+```
+Hej! Dela en mötesinbjudan eller agenda så ger jag dig en kort
+förberedelse-brief: vad mötet handlar om, vilka som är med, tre frågor
+du bör ha förberedda, och vad du ska säga om vissa ämnen kommer upp.
+```
+
+**Startprompter:**
+- `Förbered mig för det här mötet`
+- `Vilka frågor bör jag ha förberedda?`
+- `Vad ska jag säga om de frågar mig om...`
 
 **Demo-prompt under sessionen:**
 *"Jag har ett möte imorgon med skadeenheten om handläggningstider. Här är agendan: [klistra in agenda du skapat live, eller skapa fritt på plats]."*
